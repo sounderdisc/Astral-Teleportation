@@ -33,4 +33,19 @@ Sprint 7 | 3/28/2021 | TBD
 Sprint 8 | 4/4/2021  | TBD
 Projected End Date/Presentation | 4/18/2021 | TBD
 
+# Constraints
 
+- Some teammates do not have a powerful enough computer to run Unreal Engine or Unity.  This may prohibit them from working on certain tasks.
+- Some teammates are not well versed in game creation software.  Thus, they will have to quickly learn about the selected engine and its programming language during the Sprints.
+- Introducing two mechanics simultaneously.
+- As a team of primarily computer scientists, we may need to stretch the art skills we have to complete the visual aspects of the game
+
+# Assumptions
+
+- Level creation will be unique and interesting as a result of using several different mechanics from other games. 
+
+# Risks and Dependencies
+
+- We must be able to use our creativity to make enough satisfying levels to flesh out a complete game.
+- Forming creativity to figure out how to exactly create obstacles or ideas in each level.
+- All team members must both have and understand the basics of the Unity environment.
