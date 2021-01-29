@@ -20,6 +20,7 @@ The target market is for puzzle and platformer game fans that are looking for a 
 # Project Milestones
 
 Title | Date | Weekly Goals
+------------------|------------------|------------------------
 Project Start Date | 1/19/2021 |Begin project discussion; Formulate team members.
 Project Proposal | 1/30/2021 | Finalize project decision; Develop preliminary project proposal; Game engine selection.
 Sprint 1 | 2/6/2021  | GUI design; Game mechanics design; Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity Board
