@@ -33,6 +33,17 @@ Sprint 7 | 3/28/2021 | TBD
 Sprint 8 | 4/4/2021  | TBD
 Projected End Date/Presentation | 4/18/2021 | TBD
 
+# Key Personnel
+
+Client | Dr. Christopher Hollander 
+------------|---------------------
+Team Member | Mayank Patel 
+Team Member | Jakob Germann
+Team Member | Matthew Hubbs
+Team Member | Devon Wilkerson 
+Team Member | Shivani Kumar
+
+
 # Constraints
 
 - Some teammates do not have a powerful enough computer to run Unreal Engine or Unity.  This may prohibit them from working on certain tasks.
