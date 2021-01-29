@@ -9,6 +9,8 @@
 - Mayank Patel
 - Devon Wilkerson
 
+# Project Charter: 2 character simultaneous control 2d portal platformer 
+
 # Project Background:
 
 With everyone staying home, people are in need of entertainment that engages their minds and relieves stress accrued during their daily lives.  Our project will consist of a 2D platformer puzzle game that challenges players in a variety of different environments.  The core of the game is to challenge a single human player by making them solve puzzles using 2 in-game characters, and a system where teleportation is key to progressing.  Any player input causes a change to both characters which separates our game from other games of similar design and genre.
@@ -32,6 +34,17 @@ Sprint 6 | 3/14/2021 | TBD
 Sprint 7 | 3/28/2021 | TBD
 Sprint 8 | 4/4/2021  | TBD
 Projected End Date/Presentation | 4/18/2021 | TBD
+
+# Key Personnel
+
+Client | Dr. Christopher Hollander 
+------------|---------------------
+Team Member | Mayank Patel 
+Team Member | Jakob Germann
+Team Member | Matthew Hubbs
+Team Member | Devon Wilkerson 
+Team Member | Shivani Kumar
+
 
 # Constraints
 
