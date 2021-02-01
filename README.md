@@ -41,7 +41,7 @@ Client | Dr. Christopher Hollander
 ------------|---------------------
 Team Member | Mayank Patel 
 Team Member | Jakob Germann
-Team Member | Matthew Hubbs
+Team Member | Matthew Hubbs (sounderdisc)
 Team Member | Devon Wilkerson 
 Team Member | Shivani Kumar
 
