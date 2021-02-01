@@ -4,7 +4,7 @@
 
 ## Team Members
 - Jakob Germann
-- Matthew Hubbs
+- Matthew Hubbs (sounderdisc)
 - Shivani Kumar
 - Mayank Patel
 - Devon Wilkerson
