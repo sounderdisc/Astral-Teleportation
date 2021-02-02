@@ -9,7 +9,7 @@
 - Mayank Patel
 - Devon Wilkerson
 
-# Project Charter: 2 character simultaneous control 2d portal platformer 
+# Project Charter: 2 Character Simultaneous Control 2D Portal Platformer
 
 # Project Background:
 
