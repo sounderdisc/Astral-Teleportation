@@ -25,8 +25,8 @@ Title | Date | Weekly Goals
 ------------------|------------------|------------------------
 Project Start Date | 1/19/2021 |Begin project discussion; Formulate team members.
 Project Proposal | 1/30/2021 | Finalize project decision; Develop preliminary project proposal; Game engine selection.
-Sprint 1 | 2/6/2021  | GUI design; Game mechanics design; Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity Board
-Sprint 2 | 2/14/2021 | TBD
+Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity Board
+Sprint 2 | 2/14/2021 | Final GUI & game mechanics design; Burndown & Velocity Board 
 Sprint 3 | 2/21/2021 | TBD
 Sprint 4 | 2/28/2021 | TBD
 Sprint 5 | 3/7/2021  | TBD
@@ -62,3 +62,11 @@ Team Member | Shivani Kumar
 - We must be able to use our creativity to make enough satisfying levels to flesh out a complete game.
 - Forming creativity to figure out how to exactly create obstacles or ideas in each level.
 - All team members must both have and understand the basics of the Unity environment.
+
+# Sprint 1
+
+- [Product Backlog](https://github.com/sounderdisc/POOPproject/projects/3?fullscreen=true)
+- [Sprint Backlog](https://github.com/sounderdisc/POOPproject/projects/2?fullscreen=true)
+- [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/plotWorkspace.md)
+- [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
+- [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
