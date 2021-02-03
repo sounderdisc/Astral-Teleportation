@@ -25,8 +25,8 @@ Title | Date | Weekly Goals
 ------------------|------------------|------------------------
 Project Start Date | 1/19/2021 |Begin project discussion; Formulate team members.
 Project Proposal | 1/30/2021 | Finalize project decision; Develop preliminary project proposal; Game engine selection.
-Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity Board
-Sprint 2 | 2/14/2021 | Final GUI & game mechanics design; Burndown & Velocity Board 
+Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity chart
+Sprint 2 | 2/14/2021 | Finalize GUI & game mechanics design; Burndown & Velocity chart
 Sprint 3 | 2/21/2021 | TBD
 Sprint 4 | 2/28/2021 | TBD
 Sprint 5 | 3/7/2021  | TBD
