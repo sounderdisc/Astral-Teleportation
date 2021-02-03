@@ -18,5 +18,5 @@ The priority of each requirement should be either Necessary, Important, or Desir
 |            11 | -- | Players will play through multiple levels in the game | Demonstration in a testing level | -- | -- | To Do |
 |            12 | -- | Players will have a sountrack to enjoy | Demonstration in a testing level | -- | -- | To Do |
 |            13 | -- | Players will have sound effects to enjoy | Demonstration in a testing level | -- | -- | To Do |
-|            14 | -- | Players will have animations on the in-game characters to enjoy | -- | -- | To Do |
+|            14 | -- | Players will have animations on the in-game characters to enjoy | Demonstration in a testing level | -- | -- | To Do |
 |            15 | -- | Players will have animations on the in-game enemies to enjoy | Demonstration in a testing level | -- | -- | To Do |
