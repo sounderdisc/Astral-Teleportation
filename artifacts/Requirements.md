@@ -6,5 +6,8 @@ The priority of each requirement should be either Necessary, Important, or Desir
 |----------------|---------------|-------------|---------------------|--------|----------|--------|
 |            00 |           01 - 03 | Players will have their controls move both characters at the same time | Demonstration in a testing level | 8 | Necessary | To Do |
 |            01 |           04-TBD | Upon opening the game, the player will see a title screen, and they will be able to start a new game, or select a level to  begin playing that they have already unlocked   | manual testing, means of automated testing is unknown | 13 | Necessary | Verified |
-|            -- |           -- | -- | -- | -- | -- | -- |
+|            02 | -- | Player will have a restart button | Acceptance Criteria | Effort | Priority | Status |
+|            03 | -- | Player will encounter enemies in the levels | Demonstration in a testing level | -- | -- | To Do |
+|            04 | -- | Players will experience dialogue throughout the levels for deeper stories | Demonstration in a testing level | -- | -- | To Do |
+|            05 | -- | Players will encounter obstacles/switches/foot plates that will change gameplay | Demonstration in a testing level | -- | -- | To Do |
 
