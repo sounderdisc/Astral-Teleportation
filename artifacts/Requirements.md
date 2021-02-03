@@ -10,11 +10,11 @@ The priority of each requirement should be either Necessary, Important, or Desir
 |            03 | -- | Player will encounter enemies in the levels | Demonstration in a testing level | -- | -- | To Do |
 |            04 | -- | Players will experience dialogue throughout the levels for deeper stories | Demonstration in a testing level | -- | -- | To Do |
 |            05 | -- | Players will encounter obstacles/switches/foot plates that will change gameplay | Demonstration in a testing level | -- | -- | To Do |
-|            06 | -- |  | Players will have a hint system if they get stuck | -- | -- | To Do |
-|            07 | -- |  | Players will reach a goal at the end of the level for each in-game character | -- | -- | To Do |
-|            08 | -- |  | Players will be timed throughout the level (scoreboard) | -- | -- | To Do |
-|            09 | -- |  | Players will have health | -- | -- | To Do |
-|            10 | -- |  | Players will have a means of moving by portal/teleportation| -- | -- | To Do |
+|            06 | -- | Players will have a hint system if they get stuck | Demonstration in a testing level | -- | -- | To Do |
+|            07 | -- | Players will reach a goal at the end of the level for each in-game character | Demonstration in a testing level | -- | -- | To Do |
+|            08 | -- | Players will be timed throughout the level (scoreboard) | Demonstration in a testing level | -- | -- | To Do |
+|            09 | -- | Players will have health | Demonstration in a testing level | -- | -- | To Do |
+|            10 | -- | Players will have a means of moving by portal/teleportation | Demonstration in a testing level | -- | -- | To Do |
 
 
 
