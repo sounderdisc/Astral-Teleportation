@@ -67,6 +67,6 @@ Team Member | Shivani Kumar
 
 - [Product Backlog](https://github.com/sounderdisc/POOPproject/projects/3?fullscreen=true)
 - [Sprint Backlog](https://github.com/sounderdisc/POOPproject/projects/2?fullscreen=true)
-- [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/plotWorkspace.md)
+- [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/Requirements.md)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
 - [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
