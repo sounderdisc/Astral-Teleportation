@@ -15,7 +15,8 @@ The priority of each requirement should be either Necessary, Important, or Desir
 |            08 | -- | Players will be timed throughout the level (scoreboard) | Demonstration in a testing level | -- | -- | To Do |
 |            09 | -- | Players will have health | Demonstration in a testing level | -- | -- | To Do |
 |            10 | -- | Players will have a means of moving by portal/teleportation | Demonstration in a testing level | -- | -- | To Do |
-
-
-
-
+|            11 | -- | Players will play through multiple levels in the game | Demonstration in a testing level | -- | -- | To Do |
+|            12 | -- | Players will have a sountrack to enjoy | Demonstration in a testing level | -- | -- | To Do |
+|            13 | -- | Players will have sound effects to enjoy | Demonstration in a testing level | -- | -- | To Do |
+|            14 | -- | Players will have animations on the in-game characters to enjoy | -- | -- | To Do |
+|            15 | -- | Players will have animations on the in-game enemies to enjoy | Demonstration in a testing level | -- | -- | To Do |
