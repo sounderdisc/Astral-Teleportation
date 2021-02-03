@@ -65,8 +65,8 @@ Team Member | Shivani Kumar
 
 # Sprint 1
 
-- [Product Backlog](https://github.com/sounderdisc/POOPproject/projects/3?fullscreen=true)
-- [Sprint Backlog](https://github.com/sounderdisc/POOPproject/projects/2?fullscreen=true)
+- [Product Backlog](https://trello.com/b/npc42XxL/pood-project-board)
+- [Sprint Backlog](https://trello.com/b/npc42XxL/pood-project-board)
 - [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/Requirements.md)
 - [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
