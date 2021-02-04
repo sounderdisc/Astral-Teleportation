@@ -9,7 +9,7 @@
 - Mayank Patel
 - Devon Wilkerson
 
-# Project Charter: 2 character simultaneous control 2d portal platformer 
+# Project Charter: 2 Character Simultaneous Control 2D Portal Platformer
 
 # Project Background:
 
@@ -25,8 +25,8 @@ Title | Date | Weekly Goals
 ------------------|------------------|------------------------
 Project Start Date | 1/19/2021 |Begin project discussion; Formulate team members.
 Project Proposal | 1/30/2021 | Finalize project decision; Develop preliminary project proposal; Game engine selection.
-Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity Board
-Sprint 2 | 2/14/2021 | Final GUI & game mechanics design; Burndown & Velocity Board 
+Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity chart
+Sprint 2 | 2/14/2021 | Finalize GUI & game mechanics design; Burndown & Velocity chart
 Sprint 3 | 2/21/2021 | TBD
 Sprint 4 | 2/28/2021 | TBD
 Sprint 5 | 3/7/2021  | TBD
@@ -65,8 +65,8 @@ Team Member | Shivani Kumar
 
 # Sprint 1
 
-- [Product Backlog](https://github.com/sounderdisc/POOPproject/projects/3?fullscreen=true)
-- [Sprint Backlog](https://github.com/sounderdisc/POOPproject/projects/2?fullscreen=true)
-- [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/plotWorkspace.md)
-- [Burndown Chart](https://www.google.com/search?tbm=isch&q=sprint+burndown+chart)
-- [Velocity Chart](https://www.google.com/search?tbm=isch&q=agile+velocity+chart)
+- [Product Backlog](https://trello.com/b/npc42XxL/pood-project-board)
+- [Sprint Backlog](https://trello.com/b/npc42XxL/pood-project-board)
+- [Requirements](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/Requirements.md)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
