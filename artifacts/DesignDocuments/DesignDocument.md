@@ -1,4 +1,4 @@
-##Design Documents Astral Teleportation
+#Design Documents Astral Teleportation
 
 [high-level diagrams](https://inserthere.com)
 [low-level UML diagrams](https://inserthere.com)
