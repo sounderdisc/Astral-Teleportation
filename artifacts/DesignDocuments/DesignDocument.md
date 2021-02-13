@@ -15,17 +15,19 @@
 ## Major Classes
 
 ## Data Design
-That majority of the data this system uses resets any time a level is started or restarted. We expect the average player to restart a level, or complete the level in less than 5 minutes. The only data we need to save are the number of levels that have been completed in order to fulfil RID 3 and RID 24, and the player's setting preferences which will include visual, control, and audio settings in order to fulfil RID 19, 20, 21, and 22. Level completion data will be stored in a table, and will keep track of a level ID number, and a T/F flag marking level completion. 
+That majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
+Level completion data will be stored in a table, and will keep track of a level ID number in the form of an integer, and a T/F flag marking level completion.
+The player's settings preferences will be stored in a cs file that will control all of the settings mentioned. Since Unity is focused around components created with cs scripts, this will be the best way to have the settings stored and will be easily accessible for debugging.
 
 **Do we keep this?**
---------------------------
+--
 While in theory, if the player always starts at the first level and can only play levels for which they have completed the previous level, we could store this information in a single integer indicating the most recently completed level, this requires the player to play through the game in squence starting at level 1. The flexibility from storing a small amount of additional data is worth the cost of storing that data, which is why we have chosen a list instead of a single integer.
---------------------------
+--
 
 **Needs concrete plan**
---------------------------
+--
 Player preferences is a single set of data that could be saved across game sessions in a variety of ways. The visual aid does not represent a table, but instead simply lists what needs to be saved. Specifics on how to implement this can be determined when we know more about the Unity game engine.
---------------------------
+--
 
 
 ## Business Rules
@@ -35,13 +37,13 @@ Unity requires any business that makes over $100,000 on a program made from thei
 The user interface is catagorized into two groups: menus and in-game. Above you will find the visual aid for the menus by clicking on UI diagram, and the visual aid for the in-game UI by clicking on UI mock-up. Both use commonly used conventions that will be familiar to most players. Menu buttons are clickable and lead to more specific screens. In game, the player will use WASD or the arrow keys to move and the left and right mouse buttons to shoot a red or blue portal at the location the mouse cursor's location.
 
 ## Resource Management
-In a 2D game, the biggest drain on system resources is from the number of draw calls. This can be reduced by packaging certain sprites together into one file larger file instead of each sprite having their own file, and tinkering with the static parts of a given level and packaging them together can help reduce draw calls in the same way. Optimization is a very expensive in terms of developer time, and considering that when a user starts a game they don't tend to have much else running on their computer, we can likely save optimization for the later weeks of development.
+In the system, the biggest drain on system resources is from the number of draw calls made in Unity. This can be reduced by packaging sprites together, as well as static parts of a level, into one larger file instead of each sprite having their own file. Optimization is a very expensive in terms of developer time, and considering that when a user starts a game they don't tend to have much else running on their computer, we can likely save optimization for the later weeks of development.
 
 ## Security
 Since the system will be run entirely locally, security measures are not required. Unity will handle all data and error logging, as well as any incident of crashing/ failing of the system.
 
 ## Performance
-The performance of the system will be stable due to the 2D nature of the game. Every precaution will be taken to make sure the game is heavily optimized, and will not be resource intensive. As mentioned in Resource Management, draw calls are a large contributor to performance problems, and we will learn more about how to optimize a game in Unity in the later weeks of development as development time allows. The game will be prioritized for speed, since memory is not an issue for the system a gamer will likely have.
+The performance of the system will be stable due to the 2D nature of the game. Every precaution will be taken to make sure the game is heavily optimized, and will not be resource intensive. The game will be prioritized for speed, since memory is not an issue for the system a gamer will likely have.
 
 ## Scalability
 The system should never need explicit scaling since it is a single player game. The number of users will never impact the experience, or availability, of any individual player. Likewise, there is no need for a server or network nodes since everything will be handled locally. 
@@ -53,20 +55,20 @@ The system will not share data, resources, or personal information about the use
 This system is privately owned and will not be exported outside of the United States. No string modification will be required in the system since the only supported language is English.
 
 **Keep all this?**
---------------------------
+--
 No member of the development team speaks another language besides English at such a proficency to translate all of the game's text into another language. Addtionally, it is unlikely that anyone besides the members of the development team and the grader of the project for which this game is being made will ever play this game or watch it being played. As such, internationalization and localization are outside the scope of this project.
 
 This game follows the conventions of other games that are played on keyboard and mouse. The topmost option in the title screen is "Play" as per convention. The WASD and the mouse left and right buttons are common controls. Someone who does not read english who launches the game is likely to stumble across all they need to know in order to play the game.
---------------------------
+--
 
 ## Input/ Output
 Unity has built in functions for input events in the Input class. The Input class has functionality to detect input down, input up, and input press, and the inputs known to the Input class can be configured in the project settings of Unity. Unity also provides support for graphics in game, and an interface to design scenes. These tools will be used to handle input and output for the game.
 
 ## Error processing
-
+Unity will be handling any errors that happen during runtime. When coding the game, Unity will also handle any errors that occur from incorrect code. For non-coding related errors, all developers will be thoroughly testing each feature in a testing scene in Unity, and reporting any bugs that require fixing. 
 
 ## Fault Tolerance
-From a certain point of view, Unity has a very large libary in C#. C# has custom exceptions, and the libraries of Unity do have some custom exceptions included. Many of these are logged and dealt with by the game engine itself. Because a simple 2D game has a limited range of input, we do not expect to run into exceptions so much as unintended behavior. Beyond this, the team will have to learn and experience more in the Unity environment in order to make a more concrete plan for dealing with possible exceptions. Some unintended behaviors can be left in because some people who play games, like those in the speedrunning community, enjoy hunting for and executing the unintended in game behavior, especially if such behavior is hard to find or perform.
+Unity has a large libary in C#. C# has custom exceptions, and the libraries of Unity do have custom exceptions included. These exceptions are logged, and dealt with by the game engine. Because a simple 2D game has a limited range of input, we do not expect to run into exceptions, but unintended behavior. Beyond this, the team will have to learn, and experience, the Unity environment to make a more concrete plan for dealing with exceptions. Some unintended behaviors can be ignored if they are hard to find or perform.
 
 ## Architectural Feasibility
 The biggest threat this archetecture proposal presents at construction time is the knowledge base required to implement all the things proposed, and the time it takes to make it all. A 2D platformer game is often the first thing people new to creating games will make, and as a result there are a lot of resources to learn and free assets to use. The five members of the team should be able to create at least the core features proposed by the user stories, and will likely be able to create more.
