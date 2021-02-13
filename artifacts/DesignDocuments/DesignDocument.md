@@ -54,7 +54,7 @@ outer source.
 
 ## Reuse decisions
 The system will end up using preexisting music since we will be adding that to the game. 
-The system also does use a couple files for Unity itself for the game.
+The system also does use a couple files for Unity itself for the game. However, we will be adding our own code on top of the Unity files to make it match what we are trying to accomplish in the game.
 
 ## Change Strategy
 
