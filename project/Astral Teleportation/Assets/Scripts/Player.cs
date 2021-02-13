@@ -6,8 +6,8 @@ public class Player : MonoBehaviour
 {
 
     public float speed = 5f;
-    public float speedModifier = 0f;
 
+    public float speedModifier = 0f;
     private float speedIncrease = 0.2f;
     
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     {
         Vector3 pos = transform.position;
 
-        if(Input.GetKey("d"))
+        if(Input.GetKey("d") && !Input.GetKey("a"))
         {
             if(speedModifier < speed)
             {
@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if(Input.GetKey("a"))
+        if(Input.GetKey("a") && !Input.GetKey("d"))
         {
             if(speedModifier > -(speed))
             {
@@ -47,16 +47,17 @@ public class Player : MonoBehaviour
             }
         }
         
-        if(!Input.GetKey("a") && !Input.GetKey("d"))
+        if((!Input.GetKey("a") && !Input.GetKey("d")) || 
+            (Input.GetKey("a") && Input.GetKey("d")))
         {
-            if(speedModifier > 0.5)
+            if(speedModifier > 0.2)
             {
-                speedModifier -= speedIncrease * 3;
+                speedModifier -= speedIncrease * 1.25f;
                 pos.x += speedModifier * Time.deltaTime;
             }
-            else if(speedModifier < -0.5)
+            else if(speedModifier < -0.2)
             {
-                speedModifier += speedIncrease * 3;
+                speedModifier += speedIncrease * 1.25f;
                 pos.x += speedModifier * Time.deltaTime;
             }
             else
