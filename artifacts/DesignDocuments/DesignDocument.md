@@ -20,16 +20,20 @@ Level completion data will be stored in a table that will keep track of a level 
 Player preferences is a single set of data that could be saved across game sessions in a variety of ways. The visual aid does not represent a table, but instead simply lists what needs to be saved. Specifics on how to implement this can be determined when we know more about the Unity game engine.
 
 ## Business Rules
+Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Since the system is not being sold for profit, this is of no concern.
 
 ## User Interface Design
 
 ## Resource Management
 
 ## Security
+Since the system will be run entirely locally, security measures are not required. The Unity engine will handle all data and error logging, as well as any incident of crashing/ failing of the system.
 
 ## Performance
+The performance of the system will be relatively stable due to the 2D nature of the game. Every precaution will be taken to make sure the game is heavily optimized, and thus will not be resource intensive. The game will be prioritized for speed, since cost is not an issue for this particular system.
 
 ## Scalability
+The system should never need explicit scaling since it's a single player game. The number of users will never impact the experience or availability of any individual player. Likewise, there is no need for a server or network nodes since everything will be handled locally. 
 
 ## Interoperability
 The system is not expected to share data, resources, or personal information about the user(s) with other software or hardware. The only data that will be saved to the game 
