@@ -53,6 +53,8 @@ outer source.
 ## Buy-VS-Build Decisions
 
 ## Reuse decisions
+The system will end up using preexisting music since we will be adding that to the game. 
+The system also does use a couple files for Unity itself for the game.
 
 ## Change Strategy
 
