@@ -53,10 +53,13 @@ This game follows the conventions of other games that are played on keyboard and
 The Unity game engine has built in functions for input events in the Input class. The Input class has functionality to detect input down, input up, and input press, and the inputs known to the Input class can be configured in the project settings of Unity. Unity also provides support for graphics in game and an interface to design scenes. These tools will be used to handle input and output for the game.
 
 ## Fault Tolerance
+From a certain point of view, Unity is a very large libary in C#. C# has custom exceptions, and the libraries of Unity do have some custom exceptions included. Many of these are logged and dealt with by the game engine itself. Because a simple 2D game has a limited range of input, we do not expect to run into exceptions so much as unintended behavior. Beyond this, the team will have to learn and experience more in the Unity environment in order to make a more concrete plan for dealing with possible exceptions. Some unintended behaviors can be left in because some people who play games, like those in the speedrunning community, enjoy hunting for and executing the unintended in game behavior, especially if such behavior is hard to find or perform.
 
 ## Architectural Feasibility
+The biggest threat this archetecture proposal presents at construction time is the knowledge base required to implement all the things proposed, and the time it takes to make it all. A 2D platformer game is often the first thing people new to creating games will make, and as a result there are a lot of resources to learn and free assets to use. The five members of the team should be able to create at least the core features proposed by the user stories, and will likely be able to create more.
 
 ## Overengineering
+Overengineering should be avoided in this project. The smaller and more concise each piece of code is, the easier it is to test and maintain. We should air on the side of more simple components rather than fewer more complex components.
 
 ## Buy-VS-Build Decisions
 The biggest thing we have decided to get off the shelf is the Unity game engine. As mentioned in prior section, this gives us a framework to start working on the things a normal person would think of being in a game instead of having to start off figuring out how to draw to the screen, or accept keyboard inputs. Art, visual aspects, and music are areas where we are more likely to look for free ready made assets as opposed to trying to make it ourselves.
@@ -66,5 +69,6 @@ The system will end up using preexisting music since we will be adding that to t
 The system also does use a couple files for Unity itself for the game. However, we will be adding our own code on top of the Unity files to make it match what we are trying to accomplish in the game.
 
 ## Change Strategy
+RID 5 requires obstacles in the game. RID 23 requires enemies in the game. The requirements are intentionally open ended to allow a decision to be made about more specific aspects of obstacles and enemies like appearance, behavior, and difficulty to be made later when more is known about the needs of the game and context in which these elements appear. The code of these elements are also designed in such a way to allow different speciation through inheritance should such a need arise.
 
 ## General Architectural Quality
