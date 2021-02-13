@@ -25,6 +25,7 @@ Player preferences is a single set of data that could be saved across game sessi
 Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Since the system is not being sold for profit, this is of no concern.
 
 ## User Interface Design
+The user interface can be catagorized into two groups: menues and in-game. Above you can find the visual aid for the menus by clicking on UI diagram, and the visual aid for the in-game UI by clicking on UI mock-up. Both use commonly used conventions that will be familiar to most players. Menu buttons are clickable and lead to more specific screens. In game, the player will use WASD or the arrow keys to move and the left and right mouse buttons to shoot a red or blue portal at the location the mouse cursor's location.
 
 ## Resource Management
 In a 2D game, the biggest drain on system resources is from the number of draw calls. This can be reduced by packaging certain sprites together into one file larger file instead of each sprite having their own file, and tinkering with the static parts of a given level and packaging them together can help reduce draw calls in the same way. Optimization is a very expensive in terms of developer time, and considering that when a user starts a game they don't tend to have much else running on their computer, we can likely save optimization for the later weeks of development.
@@ -46,10 +47,10 @@ outer source.
 ## Internationalization/ Localization
 No member of the development team speaks another language besides English at such a proficency to translate all of the game's text into another language. Addtionally, it is unlikely that anyone besides the members of the development team and the grader of the project for which this game is being made will ever play this game or watch it being played. As such, internationalization and localization are outside the scope of this project.
 
-This game does follow the conventions of other games that are played on keyboard and mouse. The topmost option in the title screen is "Play" as per convention. The WASD and the mouse left and right buttons are common controls. Someone who does not read english who launches the game is likely to stumble across all they need to know in order to play the game.
+This game follows the conventions of other games that are played on keyboard and mouse. The topmost option in the title screen is "Play" as per convention. The WASD and the mouse left and right buttons are common controls. Someone who does not read english who launches the game is likely to stumble across all they need to know in order to play the game.
 
 ## Input/ Output
-The Unity game engine has built in functions for input events such as key press, key down, key up, mouse button press, mouse button down, and mouse button up. Unity also provides support for graphics in game and an interface to design scenes. These tools will be used to handle input and output for the game.
+The Unity game engine has built in functions for input events in the Input class. The Input class has functionality to detect input down, input up, and input press, and the inputs known to the Input class can be configured in the project settings of Unity. Unity also provides support for graphics in game and an interface to design scenes. These tools will be used to handle input and output for the game.
 
 ## Fault Tolerance
 
