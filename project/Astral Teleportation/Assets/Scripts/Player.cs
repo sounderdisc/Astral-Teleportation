@@ -6,7 +6,6 @@ public class Player : MonoBehaviour
 {
 
     public float speed = 5f;
-
     public float speedModifier = 0f;
     private float speedIncrease = 0.2f;
     
