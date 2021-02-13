@@ -15,7 +15,7 @@
 ## Major Classes
 
 ## Data Design
-That majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
+The majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
 Level completion data will be stored in a table, and will keep track of a level ID number in the form of an integer, and a T/F flag marking level completion.
 The player's settings preferences will be stored in a cs file that will control all of the settings mentioned. Since Unity is focused around components created with cs scripts, this will be the best way to have the settings stored and will be easily accessible for debugging.
 
@@ -34,7 +34,7 @@ Player preferences is a single set of data that could be saved across game sessi
 Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Because the system is not being sold for profit, this is not a concern.
 
 ## User Interface Design
-The user interface is catagorized into two groups: settings and in-game. Above you will find the visual aid for the menus by clicking on UI diagram, and the visual aid for the in-game UI by clicking on UI mock-up. Both use commonly used conventions that will be familiar to most players. Setting button are clickable and lead to more specific screens, such as controlling music volume. In game, the player will use the WASD keys to move and the left and right mouse buttons to shoot a red or blue portal at the location which the mouse cursor's location is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
+The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that will be familiar to most players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WASD keys to move and the left and right mouse buttons to shoot a red or blue portal at the location which the mouse cursor's location is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
 
 ## Resource Management
 In the system, the biggest drain on system resources is from the number of draw calls made in Unity. This can be reduced by packaging sprites together, as well as static parts of a level, into one larger file instead of each sprite having their own file. Optimization is a very expensive in terms of developer time, and considering that when a user starts a game they don't tend to have much else running on their computer, we can likely save optimization for the later weeks of development.
@@ -68,7 +68,7 @@ Unity has built in functions for input events in the Input class. The Input clas
 Unity will be handling any errors that happen during runtime. When coding the game, Unity will also handle any errors that occur from incorrect code. For non-coding related errors, all developers will be thoroughly testing each feature in a testing scene in Unity, and reporting any bugs that require fixing. 
 
 ## Fault Tolerance
-Unity has a large libary in C#. C# has custom exceptions, and the libraries of Unity do have custom exceptions included. These exceptions are logged, and dealt with by the game engine. Because a simple 2D game has a limited range of input, we do not expect to run into exceptions, but unintended behavior. Beyond this, the team will have to learn, and experience, the Unity environment to make a more concrete plan for dealing with exceptions. Some unintended behaviors can be ignored if they are hard to find or perform.
+Unity has a large libary in C#. C# has custom exceptions, and the libraries of Unity have custom exceptions included. These exceptions are logged and dealt with by the game engine. Because a simple 2D game has a limited range of input, we do not expect to run into exceptions, but unintended behavior. Beyond this, the team will have to learn, and experience, the Unity environment to make a more concrete plan for dealing with exceptions. Some unintended behaviors can be ignored if they are hard to find or perform.
 
 ## Architectural Feasibility
 The biggest threat this archetecture proposal presents at construction time is the knowledge base required to implement all the things proposed, and the time it takes to make it all. A 2D platformer game is often the first thing people new to creating games will make, and as a result there are a lot of resources to learn and free assets to use. The five members of the team should be able to create at least the core features proposed by the user stories, and will likely be able to create more.
