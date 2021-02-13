@@ -32,10 +32,9 @@ Player preferences is a single set of data that could be saved across game sessi
 ## Scalability
 
 ## Interoperability
-The system is not expected to share data, resources, or personal information about the user(s) with 
-other software or hardware. The only data that will be saved to the game will be the
-completed level and the user's setting preferences, such as visual, audio, and control
-settings. However, that data will be saved in the game, not shared to an other source.
+The system is not expected to share data, resources, or personal information about the user(s) with other software or hardware. The only data that will be saved to the game 
+will be the completed level and the user's setting preferences, such as visual, audio, and control settings. However, that data will be saved in the game, not shared to an 
+outer source.
 
 ## Internationalization/ Localization
 
