@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="POOD_Context_Diagram" id="id-253cac717c5f4e438673838d1f4c5ff1" version="4.6.0">
+  <folder name="Strategy" id="id-faad8ced62c543aea6394270ce8d6c01" type="strategy"/>
+  <folder name="Business" id="id-f32ee686e224457983ead6587abf6412" type="business">
+    <element xsi:type="archimate:BusinessActor" name="Human Player: An agent that moves throughout the levels of the video game to achieve the objective" id="id-cfecb337d5224f528ad193507b3682f6">
+      <documentation>Human Player will provide input to the game system.&#xD;
+	- Movement Input&#xD;
+	- Portal Gun Firing Input&#xD;
+	- Portal Gun Aiming Input&#xD;
+	- Options/Preferences&#xD;
+	- Starting a New Game</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Developers: Creator of the game that aim to engage in continuous improvement upon the original product" id="id-988ea4f6d7714f2098a66081a08b3464"/>
+    <element xsi:type="archimate:BusinessActor" id="id-7a6c0bd6145c47e4a902534111e14229"/>
+  </folder>
+  <folder name="Application" id="id-40b363c3360d480db1ad6977ef87b356" type="application"/>
+  <folder name="Technology &amp; Physical" id="id-9946f9defc114182821e48209c81675b" type="technology">
+    <element xsi:type="archimate:CommunicationNetwork" id="id-ca2d07d440194395849c0706c58c3cb0"/>
+    <element xsi:type="archimate:SystemSoftware" name="Astral Teleportation " id="id-486417a746e843648635f21cd68759f3"/>
+  </folder>
+  <folder name="Motivation" id="id-9965430da6224e1e83bd9ae125937e91" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="id-56c284634b6d4024be57fd5093d6eb15" type="implementation_migration"/>
+  <folder name="Other" id="id-ff37199a974049e98eef8a3dcdf360fc" type="other"/>
+  <folder name="Relations" id="id-6be7b2b348a940759e31e5f02107ec38" type="relations">
+    <element xsi:type="archimate:ServingRelationship" name="Character Input" id="id-a40f6156f87a474fb81ea3244844ca1b" source="id-cfecb337d5224f528ad193507b3682f6" target="id-486417a746e843648635f21cd68759f3">
+      <documentation>Controlled by w-a-s-d keys:&#xD;
+W = Jump&#xD;
+A = Move left&#xD;
+S = Crouch down&#xD;
+D = Move Right</documentation>
+    </element>
+    <element xsi:type="archimate:ServingRelationship" name="Character Information" id="id-1303f896ae4f446cb19ab78f02a4c37f" source="id-486417a746e843648635f21cd68759f3" target="id-cfecb337d5224f528ad193507b3682f6"/>
+    <element xsi:type="archimate:ServingRelationship" name="System Feedback" id="id-03350be133664f94b8b8eed8fd4173d6" source="id-486417a746e843648635f21cd68759f3" target="id-988ea4f6d7714f2098a66081a08b3464"/>
+    <element xsi:type="archimate:ServingRelationship" name="Game Updates/Fixes" id="id-6acb1ddea2fe4f7b8f031b095199a213" source="id-988ea4f6d7714f2098a66081a08b3464" target="id-486417a746e843648635f21cd68759f3"/>
+    <element xsi:type="archimate:ServingRelationship" name="System Input" id="id-4bac5789b9bc4858a88d22f885dc4c2a" source="id-cfecb337d5224f528ad193507b3682f6" target="id-486417a746e843648635f21cd68759f3">
+      <documentation>Input information for system preferences, save files, starting games, and other non-character related input.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ServingRelationship" name="System Interface" id="id-0535e24a0a4c4a9fa3fa8441b19fe760" source="id-486417a746e843648635f21cd68759f3" target="id-cfecb337d5224f528ad193507b3682f6"/>
+  </folder>
+  <folder name="Views" id="id-6fb7aa83f3e040978db5cf8313878130" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" id="id-08524bd00ef94b99ab78ac532ba35e9c">
+      <child xsi:type="archimate:DiagramObject" id="id-92b589dec3c241c3a18c23549ecd602f" targetConnections="id-d12d02e1e7d9462fa49e1ff97d905ea2 id-6504fc6dcc7b438391a5a7f96062eddc" archimateElement="id-cfecb337d5224f528ad193507b3682f6">
+        <bounds x="228" y="390" width="169" height="115"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a3ed3628c80748779815011d49d54f8e" source="id-92b589dec3c241c3a18c23549ecd602f" target="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" archimateRelationship="id-a40f6156f87a474fb81ea3244844ca1b">
+          <bendpoint startX="228" startY="-27" endX="-228" endY="-27"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f04d960f1878419d85fe86295cbf90c2" source="id-92b589dec3c241c3a18c23549ecd602f" target="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" archimateRelationship="id-4bac5789b9bc4858a88d22f885dc4c2a">
+          <bendpoint startX="228" startY="-39" endX="-228" endY="-39"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" targetConnections="id-a031cda9dec1400ab90a33a52d5950c6 id-a3ed3628c80748779815011d49d54f8e id-f04d960f1878419d85fe86295cbf90c2" archimateElement="id-486417a746e843648635f21cd68759f3">
+        <bounds x="660" y="393" width="217" height="109"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-39c368668ac542a596ce1c6b10a67c17" source="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" target="id-d79c3ceda7bb4c7ab5fa3dfc136f276e" archimateRelationship="id-03350be133664f94b8b8eed8fd4173d6">
+          <bendpoint startX="-48" startY="-96" endX="-60" endY="93"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="id-d12d02e1e7d9462fa49e1ff97d905ea2" source="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" target="id-92b589dec3c241c3a18c23549ecd602f" archimateRelationship="id-1303f896ae4f446cb19ab78f02a4c37f">
+          <bendpoint startX="-216" startY="24" endX="186" endY="24"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6504fc6dcc7b438391a5a7f96062eddc" source="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" target="id-92b589dec3c241c3a18c23549ecd602f" archimateRelationship="id-0535e24a0a4c4a9fa3fa8441b19fe760">
+          <bendpoint startX="-252" startY="9" endX="204" endY="9"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d79c3ceda7bb4c7ab5fa3dfc136f276e" targetConnections="id-39c368668ac542a596ce1c6b10a67c17" archimateElement="id-988ea4f6d7714f2098a66081a08b3464">
+        <bounds x="672" y="216" width="193" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-a031cda9dec1400ab90a33a52d5950c6" source="id-d79c3ceda7bb4c7ab5fa3dfc136f276e" target="id-bcfd42f1d4a34accb1d52c5cc1a4cf81" archimateRelationship="id-6acb1ddea2fe4f7b8f031b095199a213">
+          <bendpoint startX="24" startY="45" endX="48" endY="-96"/>
+        </sourceConnection>
+      </child>
+    </element>
+  </folder>
+</archimate:model>
