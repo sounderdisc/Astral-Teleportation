@@ -63,13 +63,13 @@ dkms.conf
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
 
-/project/Astral Teleportation//Library/
-/project/Astral Teleportation//Temp/
-/project/Astral Teleportation//Obj/
-/project/Astral Teleportation//Build/
-/project/Astral Teleportation//Builds/
-/project/Astral Teleportation//Logs/
-/project/Astral Teleportation//UserSettings/
+/project/Astral Teleportation/Library/
+/project/Astral Teleportation/Temp/
+/project/Astral Teleportation/Obj/
+/project/Astral Teleportation/Build/
+/project/Astral Teleportation/Builds/
+/project/Astral Teleportation/Logs/
+/project/Astral Teleportation/UserSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
