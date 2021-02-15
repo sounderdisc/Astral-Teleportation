@@ -1,7 +1,7 @@
 # Design Documents Astral Teleportation
 
-- [high-level diagrams](https://inserthere.com)
-- [low-level UML diagrams](https://inserthere.com)
+- high-level diagrams [context](https://cdn.discordapp.com/attachments/672319862902751232/810361571570090020/unknown.png) [container](https://cdn.discordapp.com/attachments/672319862902751232/810362380278038558/unknown.png) [component](https://cdn.discordapp.com/attachments/672319862902751232/810367995658108968/unknown.png)
+- [low-level UML diagrams](https://cdn.discordapp.com/attachments/477667900111454218/810734970061455440/unknown.png)
 - [data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 - [UI diagram](https://drive.google.com/file/d/1Eqcxoi1_-u2WgieiP-B5B0fkeOvHUEI7/view?usp=sharing)
 - [UI mock-up](https://drive.google.com/file/d/1dMAj4dYYyvTMJUVLegpz6Mg5TUY13SVJ/view?usp=sharing)
