@@ -10,10 +10,10 @@
 # System Design
 
 ## Program Organization
-The context of our system is simple; there is a player and a game. The container is simply the Unity game engine we are using. The components are everything that you could name as a noun in our level mock up; namely a potal gun, character, obsticle, and the level itself as a whole.
+The context of our system is simple; there is a player and a game. The container is simply the Unity game engine we are using. The components are everything that you could name as a noun in our level mock up; namely a potal gun, character, obstacle, and the level itself as a whole.
 
 ## Major Classes
-The component diagram makes designing the major classes easy. The major classes are the potal gun, character, obsticle, and the level itself.
+The component diagram makes designing the major classes easy. The major classes are the potal gun, character, obstacle, and the level itself.
 
 ## Data Design
 The majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
@@ -26,13 +26,13 @@ User settings are a single set of data that could be saved across game sessions 
 Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Because the system is not being sold for profit, this is not a concern.
 
 ## User Interface Design
-The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that will be familiar to players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WAS keys to move to the left and right as well as jump, and mouse buttons to shoot a red or blue portal at the location which the mouse cursor's location is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
+The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that are familiar to players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WAS keys to move to the left and right as well as jump, and mouse buttons to shoot a red or blue portal at the location which the mouse cursor is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
 
 ## Resource Management
-In the system, the largest drain on system resources is from the number of draw calls made in Unity. This can be reduced by packaging sprites together, as well as static parts of a level, into one larger file instead of each sprite having their own file. Unity handles all of the garbage collection in the system, so memory will only ever be an issue if Unity fails.
+In the system, the largest drain on system resources is from the number of draw calls made in Unity. This can be reduced by packaging sprites together, as well as static parts of a level, into one larger file instead of each sprite having their own file. As the game will not have complex graphics and will load a small static level at a time, resource management will not be a big concern for this project. Unity handles all of the garbage collection in the system, so memory will only ever be an issue if Unity fails.
 
 ## Security
-Since the system will be run entirely locally, security measures are not required. Unity will handle all data and error logging, as well as any incident of crashing/ failing of the system.
+Since the system will be run only locally, security measures are not required. Unity will handle all data and error logging, as well as any incident of crashing/ failing of the system.
 
 ## Performance
 The performance of the system will be stable due to the 2D nature of the game and Unity's optimization. Every precaution will be taken to make sure the game is heavily optimized, and will not be resource intensive. The game will be prioritized for speed, since memory is not an issue for the system a gamer will likely have.
@@ -65,10 +65,10 @@ Due to the nature of the system, any error that is detected will lead to a syste
 The Unity engine is the heart of the system, and was available for free. This provides a framework to focus on the actual mechanics of the game, rather than building an engine from scratch. All the art, sound, and animations will be sought out from a free, or cheap, source.
 
 ## Reuse decisions
-The system will use existing art, sound, and animations. By choosing assets that closely match the theme of the game, they will conform to the archiectural goals. Likewise, scrips will be referenced for any mechanic too advanced for the scope of the system, and implemented in a unique way.
+The system will use existing art, sound, and animations. By choosing assets that closely match the theme of the game, they will conform to the archiectural goals. Likewise, scripts will be referenced for any mechanic too advanced for the scope of the system, and implemented in a unique way.
 
 ## Change Strategy
-The system will be highly adaptable to any change that is needed. Unity is designed around compartmentalization, which in turn causes any change to an individual piece quite simple. If anything is added into the game, it will not affect anything that is already in place.
+The system will be highly adaptable to any change that is needed. Unity is designed around compartmentalization, which in turn causes any change to an individual piece quite simple. If anything is added into the game, it will not affect anything that is already in place. We will develop with change as the main strategy. With the use of Git and Github we will be able to implement new scripts and ideas without having to worry about loosing progress if the changes are not beneficial.
 
 ## General Architectural Quality
-No architecture is perfect, especially one that is made by students with little archetural experience. However, the architectural team is also the development team, so if we learn something during construction, we can apply it to updating our architecture. This sort of real time learning should more than make up for any unforeseen shortcomings in our design. The key is to think about why we are doing what we are doing, think critically at all times, and communicate among ourselves. The overall goal of the system is for modifiability over performance. 
+No architecture is perfect, especially one that is made by students with little archetural experience. However, the architectural team is also the development team, so if we learn something during construction, we can apply it to updating our architecture. This sort of real time learning should more than make up for any unforeseen shortcomings in our design. The key is to think about why we are doing what we are doing, think critically at all times, and communicate among ourselves. The overall goal of the system is for modifiability and quick iterations. 
