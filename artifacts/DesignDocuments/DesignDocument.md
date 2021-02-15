@@ -3,8 +3,7 @@
 - high-level diagrams:  <br />[context](https://cdn.discordapp.com/attachments/672319862902751232/810361571570090020/unknown.png)<br />  [container](https://cdn.discordapp.com/attachments/672319862902751232/810362380278038558/unknown.png)<br />  [component](https://cdn.discordapp.com/attachments/672319862902751232/810367995658108968/unknown.png)
 - [low-level class diagrams](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Class_Diagrams_Astral_Teleportation-1.pdf)
 - [data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
-- [UI diagram](https://drive.google.com/file/d/1Eqcxoi1_-u2WgieiP-B5B0fkeOvHUEI7/view?usp=sharing)
-- [UI mock-up](https://drive.google.com/file/d/1dMAj4dYYyvTMJUVLegpz6Mg5TUY13SVJ/view?usp=sharing)
+
 
 
 # System Design
@@ -34,7 +33,10 @@ User settings are a single set of data that could be saved across game sessions 
 Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Because the system is not being sold for profit, this is not a concern.
 
 ## User Interface Design
+- [UI diagram](https://drive.google.com/file/d/1Eqcxoi1_-u2WgieiP-B5B0fkeOvHUEI7/view?usp=sharing)
+- [UI mock-up](https://drive.google.com/file/d/1dMAj4dYYyvTMJUVLegpz6Mg5TUY13SVJ/view?usp=sharing)
 The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that are familiar to players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WAS keys to move to the left and right as well as jump, and mouse buttons to shoot a red or blue portal at the location which the mouse cursor is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
+
 
 ## Resource Management
 In the system, the largest drain on system resources is from the number of draw calls made in Unity. This can be reduced by packaging sprites together, as well as static parts of a level, into one larger file instead of each sprite having their own file. As the game will not have complex graphics and will load a small static level at a time, resource management will not be a big concern for this project. Unity handles all of the garbage collection in the system, so memory will only ever be an issue if Unity fails.
