@@ -93,6 +93,6 @@ Team Member | Shivani Kumar
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
 - [Trello Board](https://trello.com/b/npc42XxL/pood-project-board)
 - [Design Documents](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
-- [Source Code] (https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
-- [Automated Tests] (https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
+- [Automated Tests](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - [Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
