@@ -1,18 +1,19 @@
 # Design Documents Astral Teleportation
 
-- [high-level diagrams](https://inserthere.com)
-- [low-level UML diagrams](https://inserthere.com)
+- high-level diagrams [context](https://cdn.discordapp.com/attachments/672319862902751232/810361571570090020/unknown.png) [container](https://cdn.discordapp.com/attachments/672319862902751232/810362380278038558/unknown.png) [component](https://cdn.discordapp.com/attachments/672319862902751232/810367995658108968/unknown.png)
+- [low-level UML diagrams](https://cdn.discordapp.com/attachments/477667900111454218/810734970061455440/unknown.png)
 - [data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 - [UI diagram](https://drive.google.com/file/d/1Eqcxoi1_-u2WgieiP-B5B0fkeOvHUEI7/view?usp=sharing)
 - [UI mock-up](https://drive.google.com/file/d/1dMAj4dYYyvTMJUVLegpz6Mg5TUY13SVJ/view?usp=sharing)
-- [Create system design document](https://inserthere.com)
 
 
 # System Design
 
 ## Program Organization
+The context of our system is simple; there is a player and a game. The container is simply the Unity game engine we are using. The components are everything that you could name as a noun in our level mock up; namely a potal gun, character, obsticle, and the level itself as a whole.
 
 ## Major Classes
+The component diagram makes designing the major classes easy. The major classes are the potal gun, character, obsticle, and the level itself.
 
 ## Data Design
 The majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
@@ -70,3 +71,4 @@ The system will use existing art, sound, and animations. By choosing assets that
 The system will be highly adaptable to any change that is needed. Unity is designed around compartmentalization, which in turn causes any change to an individual piece quite simple. If anything is added into the game, it will not affect anything that is already in place.
 
 ## General Architectural Quality
+No archetecture is perfect, especially one that is made by students with little archetural experience. However, the archetectural team is also the development team, so if we learn something durring construction, we can apply it to updating our archetecture. This sort of real time learning should more than make up for any unforeseen shortcomings in our design. The key is to think about why we are doing what we are doing, think critically at all times, and communicate among ourselves.
