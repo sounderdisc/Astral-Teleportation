@@ -1,7 +1,7 @@
 # Design Documents Astral Teleportation
 
 - high-level diagrams:  <br />[context](https://cdn.discordapp.com/attachments/672319862902751232/810361571570090020/unknown.png)<br />  [container](https://cdn.discordapp.com/attachments/672319862902751232/810362380278038558/unknown.png)<br />  [component](https://cdn.discordapp.com/attachments/672319862902751232/810367995658108968/unknown.png)
-- [low-level class diagrams](https://docs.google.com/document/d/1tcoEVSHB6N_rdhJvXTALxAOI-Cny3il_FE5b6pyRjJw/edit?usp=sharing)
+- [low-level class diagrams](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Class_Diagrams_Astral_Teleportation-1.pdf)
 - [data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 - [UI diagram](https://drive.google.com/file/d/1Eqcxoi1_-u2WgieiP-B5B0fkeOvHUEI7/view?usp=sharing)
 - [UI mock-up](https://drive.google.com/file/d/1dMAj4dYYyvTMJUVLegpz6Mg5TUY13SVJ/view?usp=sharing)
