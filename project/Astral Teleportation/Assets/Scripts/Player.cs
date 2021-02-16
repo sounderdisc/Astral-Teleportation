@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
     public float speed = 5f;
     public float speedModifier = 0f;
+
+    public bool isDead = false;
     private float speedIncrease = 0.2f;
     
     // Start is called before the first frame update
@@ -20,53 +22,75 @@ public class Player : MonoBehaviour
     {
         Vector3 pos = transform.position;
 
-        if(Input.GetKey("d") && !Input.GetKey("a"))
+        if(!isDead)
         {
-            if(speedModifier < speed)
+            if(Input.GetKey("d") && !Input.GetKey("a"))
             {
-                speedModifier += speedIncrease;
-                pos.x += speedModifier * Time.deltaTime;
+                if(speedModifier < speed)
+                {
+                    speedModifier += speedIncrease;
+                    pos.x += speedModifier * Time.deltaTime;
+                }
+                if(speedModifier >= speed)
+                {
+                    pos.x += speed * Time.deltaTime;
+                }
             }
-            if(speedModifier >= speed)
+
+            if(Input.GetKey("a") && !Input.GetKey("d"))
             {
-                pos.x += speed * Time.deltaTime;
+                if(speedModifier > -(speed))
+                {
+                    speedModifier -= speedIncrease;
+                    pos.x += speedModifier * Time.deltaTime;
+                }
+                if(speedModifier <= -(speed))
+                {
+                    pos.x += -(speed) * Time.deltaTime;
+                }
             }
+            
+            if((!Input.GetKey("a") && !Input.GetKey("d")) || 
+                (Input.GetKey("a") && Input.GetKey("d")))
+            {
+                if(speedModifier > 0.2)
+                {
+                    speedModifier -= speedIncrease * 1.25f;
+                    pos.x += speedModifier * Time.deltaTime;
+                }
+                else if(speedModifier < -0.2)
+                {
+                    speedModifier += speedIncrease * 1.25f;
+                    pos.x += speedModifier * Time.deltaTime;
+                }
+                else
+                {
+                    pos.x += 0;
+                }
+
+            }
+
+            transform.position = pos;
         }
 
-        if(Input.GetKey("a") && !Input.GetKey("d"))
-        {
-            if(speedModifier > -(speed))
-            {
-                speedModifier -= speedIncrease;
-                pos.x += speedModifier * Time.deltaTime;
-            }
-            if(speedModifier <= -(speed))
-            {
-                pos.x += -(speed) * Time.deltaTime;
-            }
-        }
-        
-        if((!Input.GetKey("a") && !Input.GetKey("d")) || 
-            (Input.GetKey("a") && Input.GetKey("d")))
+        else
         {
             if(speedModifier > 0.2)
-            {
-                speedModifier -= speedIncrease * 1.25f;
-                pos.x += speedModifier * Time.deltaTime;
-            }
-            else if(speedModifier < -0.2)
-            {
-                speedModifier += speedIncrease * 1.25f;
-                pos.x += speedModifier * Time.deltaTime;
-            }
-            else
-            {
-                pos.x += 0;
-            }
-
+                {
+                    transform.Rotate(new Vector3(0,0,90));
+                    speedModifier = 0;
+                    pos.x += 0;
+                }
+                else if(speedModifier < -0.2)
+                {
+                    transform.Rotate(new Vector3(0,0,-90));
+                    speedModifier = 0;
+                    pos.x += 0;
+                }
+                else
+                {
+                    pos.x += 0;
+                }
         }
-
-        transform.position = pos;
-
     }
 }
