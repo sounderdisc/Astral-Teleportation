@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // GameObject gameObj = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -19,7 +21,8 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            Object.Destroy(collision.gameObject);
+            player = collision.GetComponent<Player>();
+            player.isDead = true;
         }
     }
 }
