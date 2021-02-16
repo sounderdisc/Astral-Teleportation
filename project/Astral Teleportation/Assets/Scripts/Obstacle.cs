@@ -6,10 +6,11 @@ public class Obstacle : MonoBehaviour
 {
 
     public Player player;
+    
     // Start is called before the first frame update
     void Start()
     {
-        // GameObject gameObj = GameObject.FindWithTag("Player");
+        
     }
 
     // Update is called once per frame
@@ -17,6 +18,7 @@ public class Obstacle : MonoBehaviour
     {
         
     }
+    
     void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
