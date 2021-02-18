@@ -5,7 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
 
-    public Player player;
+    public PlayerController player;
     public Rigidbody2D _rigidbody2D;
     public float knockback;
     
@@ -25,7 +25,7 @@ public class Obstacle : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            player = collision.GetComponent<Player>();
+            player = collision.GetComponent<PlayerController>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
             _rigidbody2D.AddForce(transform.right * 100);
             player.isDead = true;

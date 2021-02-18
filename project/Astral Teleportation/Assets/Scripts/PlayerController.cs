@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public float speed = 5.5f;
@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void moveLeft()
+    public void moveLeft()
     {
         if(speedModifier > -(speed))
         {
