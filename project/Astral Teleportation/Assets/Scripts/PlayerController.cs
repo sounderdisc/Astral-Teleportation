@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
     public bool rooted = false;
     private Rigidbody2D rigidBody2D;
-    private float jumpForce = 11.5f;
+    private float jumpForce = 5f;
     private float speedIncrease = 0.2f;
 
     
@@ -63,11 +63,11 @@ public class PlayerController : MonoBehaviour
         if(speedModifier > -(speed))
         {
             speedModifier -= speedIncrease;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         if(speedModifier <= -(speed))
         {
-            rigidBody2D.velocity = new Vector2(-(speed), 0f);
+            rigidBody2D.velocity = new Vector2(-(speed), rigidBody2D.velocity.y);
         }
     }
 
@@ -76,11 +76,11 @@ public class PlayerController : MonoBehaviour
         if(speedModifier < speed)
         {
             speedModifier += speedIncrease;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         if(speedModifier >= speed)
         {
-            rigidBody2D.velocity = new Vector2(speed, 0f);
+            rigidBody2D.velocity = new Vector2(speed, rigidBody2D.velocity.y);
         }
     }
 
@@ -94,16 +94,16 @@ public class PlayerController : MonoBehaviour
         if(speedModifier > 0.2)
         {
             speedModifier -= speedIncrease * 1.25f;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         else if(speedModifier < -0.2)
         {
             speedModifier += speedIncrease * 1.25f;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         else
         {
-            rigidBody2D.velocity = new Vector2(0f, 0f);
+            rigidBody2D.velocity = new Vector2(0f, rigidBody2D.velocity.y);
         }
     }
 
@@ -113,17 +113,17 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(new Vector3(0,0,90));
             speedModifier = 0;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         else if(speedModifier < -0.2)
         {
             transform.Rotate(new Vector3(0,0,-90));
             speedModifier = 0;
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
         else
         {
-            rigidBody2D.velocity = new Vector2(speedModifier, 0f);
+            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
         }
     }
 }
