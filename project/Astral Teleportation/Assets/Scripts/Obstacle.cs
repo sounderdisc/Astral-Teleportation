@@ -27,7 +27,7 @@ public class Obstacle : MonoBehaviour
         {
             player = collision.GetComponent<Player>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
-            _rigidbody2D.AddForce(transform.right * 100);
+            _rigidbody2D.AddForce(transform.right * 100); // what if the player contacts the obstacle from the left? then it should knock back in that direction
             player.isDead = true;
             
         }
