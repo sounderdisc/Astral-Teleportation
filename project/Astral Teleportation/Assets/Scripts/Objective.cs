@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class objective : MonoBehaviour
 {
-    public Player player;
+    public PlayerController player;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class objective : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player = collision.GetComponent<Player>();
+            player = collision.GetComponent<PlayerController>();
             player.rooted = true;
             Debug.Log("Level Complete!");
             // uncomment the next line and add a check to make sure both players are at the objective. maybe turn off the player's colision once they reach the objective so they dont get in the way of the other player

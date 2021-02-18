@@ -8,11 +8,10 @@ namespace Tests
 {
     public class LinkedMoveTest
     {
-        [UnityTest]
-        public IEnumerator LeftLinked()
+        [Test]
+        public void moveLeft()
         {
-            
-            yield return null;
+            // Assert.AreEqual(expected: new Vector3(x:-1, y:0, z: 0), actual:PlayerController.);
         }
     }
 }
