@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speedModifier = 0f;
     public bool isDead = false;
     public bool rooted = false;
-    private Rigidbody2D rigidBody2D;
+    private Rigidbody2D rb2D;
     private float jumpForce = 5f;
     private float speedIncrease = 0.2f;
 
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidBody2D = gameObject.GetComponent<Rigidbody2D>();
+        rb2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
             {
                 stopMovement();
             }
-            if (Input.GetKey("w") && rigidBody2D.velocity.y == 0)
+            if (Input.GetKey("w") && rb2D.velocity.y == 0)
             {
                 jump();
             }
@@ -63,67 +63,67 @@ public class PlayerController : MonoBehaviour
         if(speedModifier > -(speed))
         {
             speedModifier -= speedIncrease;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         if(speedModifier <= -(speed))
         {
-            rigidBody2D.velocity = new Vector2(-(speed), rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(-(speed), rb2D.velocity.y);
         }
     }
 
-    void moveRight()
+    public void moveRight()
     {
         if(speedModifier < speed)
         {
             speedModifier += speedIncrease;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         if(speedModifier >= speed)
         {
-            rigidBody2D.velocity = new Vector2(speed, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
         }
     }
 
-    void jump()
+    public void jump()
     {
-        rigidBody2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        rb2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    void stopMovement()
+    public void stopMovement()
     {
         if(speedModifier > 0.2)
         {
             speedModifier -= speedIncrease * 1.25f;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         else if(speedModifier < -0.2)
         {
             speedModifier += speedIncrease * 1.25f;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         else
         {
-            rigidBody2D.velocity = new Vector2(0f, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(0f, rb2D.velocity.y);
         }
     }
 
-    void freezePlayerActions()
+    public void freezePlayerActions()
     {
         if(speedModifier > 0.2)
         {
             transform.Rotate(new Vector3(0,0,90));
             speedModifier = 0;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         else if(speedModifier < -0.2)
         {
             transform.Rotate(new Vector3(0,0,-90));
             speedModifier = 0;
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         else
         {
-            rigidBody2D.velocity = new Vector2(speedModifier, rigidBody2D.velocity.y);
+            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
     }
 }
