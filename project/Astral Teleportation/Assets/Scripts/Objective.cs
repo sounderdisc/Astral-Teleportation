@@ -7,7 +7,8 @@ public class Objective : MonoBehaviour
 {
     public PlayerController player;
     public Objective otherObjective;
-    public bool isRed;
+    public bool redObjective;
+    public bool blueObjective;
     public bool isTaken = false;
 
     // Start is called before the first frame update
@@ -27,9 +28,25 @@ public class Objective : MonoBehaviour
         if (!isTaken && collision.gameObject.tag == "Player")
         {
             player = collision.GetComponent<PlayerController>();
-            if (player.isRed == isRed)
+            if (player.isRed == redObjective)
             {
-                Debug.Log("isRed = " + isRed + " Got their objective!");
+                Debug.Log("isRed = " + player.isRed + " Got their objective!");
+                gameObject.transform.parent = player.gameObject.transform;
+                isTaken = true;
+
+                if (otherObjective.isTaken)
+                {
+                    Debug.Log("Both objectives taken, loading next level");
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+                else
+                {
+                    Debug.Log("one objective taken. will not load level until both are taken");
+                }
+            }
+            if (player.isBlue == blueObjective)
+            {
+                Debug.Log("isBlue = " + player.isBlue + " Got their objective!");
                 gameObject.transform.parent = player.gameObject.transform;
                 isTaken = true;
 
