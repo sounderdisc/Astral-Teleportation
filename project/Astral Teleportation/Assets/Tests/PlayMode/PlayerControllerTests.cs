@@ -12,14 +12,20 @@ namespace Tests
         public IEnumerator moveRight()
         {
             GameObject placeholder = new GameObject("placeholderGameObjectt");
-            Rigidbody2D rb2d = placeholder.AddComponent<Rigidbody2D>();
-            rb2d.velocity = new Vector2(0, 0);
+            placeholder.AddComponent<Rigidbody2D>();
+            yield return null;
             PlayerController player = placeholder.AddComponent<PlayerController>();
-            
+            yield return null;
 
             var startingPos = player.transform.position.x;
-            player.moveRight();
-            yield return new WaitForSeconds(1);
+
+            float timePassed = 0f;
+            while( timePassed < 1){
+                player.moveRight();
+                timePassed += Time.deltaTime;
+                yield return null;
+            }
+            yield return null;
             var endingPos = player.transform.position.x;
             Assert.IsTrue(endingPos > startingPos);
 
