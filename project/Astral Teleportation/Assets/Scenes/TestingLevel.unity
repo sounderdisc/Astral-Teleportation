@@ -885,7 +885,7 @@ PrefabInstance:
     - target: {fileID: 1580921870873259623, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
         type: 3}
       propertyPath: m_Name
-      value: PlayerTest
+      value: redPlayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
@@ -1023,7 +1023,7 @@ PrefabInstance:
     - target: {fileID: 7287310751070669263, guid: d5a5eedd22a8b5c4382078938f5053ab,
         type: 3}
       propertyPath: m_Name
-      value: PlayerTest (1)
+      value: bluePlayer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a5eedd22a8b5c4382078938f5053ab, type: 3}
