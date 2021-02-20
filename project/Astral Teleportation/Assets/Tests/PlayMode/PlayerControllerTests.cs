@@ -12,9 +12,8 @@ namespace Tests
         public IEnumerator moveRight()
         {
             GameObject placeholder = new GameObject("placeholderGameObjectt");
-            Rigidbody2D rb2d = placeholder.AddComponent<Rigidbody2D>();
+            placeholder.AddComponent<Rigidbody2D>();
             yield return null;
-            rb2d.velocity = new Vector2(0, 0);
             PlayerController player = placeholder.AddComponent<PlayerController>();
             yield return null;
 
