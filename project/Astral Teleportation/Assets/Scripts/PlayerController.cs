@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5.5f;
     public float speedModifier = 0f;
     public bool isRed;
+    public bool isBlue;
     public bool isDead = false;
     public bool rooted = false;
     private Rigidbody2D rb2D;

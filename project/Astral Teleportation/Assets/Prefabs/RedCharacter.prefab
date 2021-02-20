@@ -98,8 +98,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   speedModifier: 0
-  isDead: 0
   isRed: 1
+  isBlue: 0
+  isDead: 0
   rooted: 0
 --- !u!61 &1580921870873259618
 BoxCollider2D:
