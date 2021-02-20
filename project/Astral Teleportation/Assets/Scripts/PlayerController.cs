@@ -124,6 +124,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            speedModifier = 0;
             rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
     }
