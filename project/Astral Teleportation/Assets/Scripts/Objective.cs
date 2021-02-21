@@ -14,13 +14,18 @@ public class Objective : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(player.isDead)
+        {
+            Destroy(gameObject);
+            isTaken = false;
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -38,7 +43,7 @@ public class Objective : MonoBehaviour
                 {
                     Debug.Log("Both objectives taken, loading next level");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                }
+                } 
                 else
                 {
                     Debug.Log("one objective taken. will not load level until both are taken");
