@@ -40,8 +40,8 @@ User settings are a single set of data that could be saved across game sessions 
 Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Because the system is not being sold for profit, this is not a concern.
 
 ## User Interface Design
-- ![UI diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ui-diagram.png)
-- ![UI mock-up](https://media.discordapp.net/attachments/798218681909510154/812867914700947486/ui-mockup.png?width=1384&height=1072)
+- ![UI diagram](https://cdn.discordapp.com/attachments/798218681909510154/812868233345368095/ui-diagram.png)
+- ![UI mock-up](https://cdn.discordapp.com/attachments/798218681909510154/812867914700947486/ui-mockup.png)
 
 The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that are familiar to players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WAS keys to move to the left and right as well as jump, and mouse buttons to shoot a red or blue portal at the location which the mouse cursor is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
 
