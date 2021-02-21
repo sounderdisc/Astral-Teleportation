@@ -18,3 +18,5 @@
    - Both characters should move to the left
 * Step 5: Press "W"
    - Both characters should jump
+* Step 6: Press "D"
+   - Both characters should move to the right
