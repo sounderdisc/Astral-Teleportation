@@ -86,4 +86,5 @@ Team Member | Shivani Kumar
 - [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
+- [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
 - [Demonstration](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
