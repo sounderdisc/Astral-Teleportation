@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
             {
                 stopMovement();
             }
-            if (Input.GetKey("w") && rb2D.velocity.y == 0)
+            if (Input.GetKey("w") && rb2D.velocity.y == 0 && !rooted)
             {
                 jump();
             }
@@ -62,33 +62,42 @@ public class PlayerController : MonoBehaviour
 
     public void moveLeft()
     {
-        if(speedModifier > -(speed))
+        if(!isDead)
         {
-            speedModifier -= speedIncrease;
-            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
-        }
-        if(speedModifier <= -(speed))
-        {
-            rb2D.velocity = new Vector2(-(speed), rb2D.velocity.y);
+            if(speedModifier > -(speed))
+            {
+                speedModifier -= speedIncrease;
+                rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
+            }
+            if(speedModifier <= -(speed))
+            {
+                rb2D.velocity = new Vector2(-(speed), rb2D.velocity.y);
+            }
         }
     }
 
     public void moveRight()
     {
-        if(speedModifier < speed)
+        if(!isDead)
         {
-            speedModifier += speedIncrease;
-            rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
-        }
-        if(speedModifier >= speed)
-        {
-            rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
+            if(speedModifier < speed)
+            {
+                speedModifier += speedIncrease;
+                rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
+            }
+            if(speedModifier >= speed)
+            {
+                rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
+            }
         }
     }
 
     public void jump()
     {
-        rb2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        if(!isDead)
+        {
+            rb2D.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
 
     public void stopMovement()

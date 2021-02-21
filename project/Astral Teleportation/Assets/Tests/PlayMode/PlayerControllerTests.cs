@@ -89,23 +89,34 @@ namespace Tests
             PlayerController player = stopMovementTester.AddComponent<PlayerController>();
             yield return null;
 
-            float timePassed = 0f;
             var movingPos = player.transform.position.x;
+            float timePassed = 0f;
+            
             while( timePassed < 1){
                 player.moveLeft();
                 timePassed += Time.deltaTime;
-                movingPos = player.transform.position.x;
+                
                 yield return null;
             }
-            
+
             timePassed = 0f;
+            
+            while( timePassed < 1){
+                timePassed += Time.deltaTime;
+                yield return null;
+            }
+
+            movingPos = player.transform.position.x;
+            timePassed = 0f;
+
             while( timePassed < 1){
                 timePassed += Time.deltaTime;
                 yield return null;
             }
             yield return null;
+
             var endingPos = player.transform.position.x;
-            Assert.IsTrue(endingPos < movingPos);
+            Assert.IsTrue(endingPos == movingPos);
 
             UnityEngine.Object.DestroyImmediate(player);
             yield return null;
@@ -131,7 +142,7 @@ namespace Tests
             }
             yield return null;
             var endingPos = player.transform.position.x;
-            Assert.IsTrue(endingPos < startingPos);
+            Assert.IsTrue(endingPos == startingPos);
 
             UnityEngine.Object.DestroyImmediate(player);
         }
