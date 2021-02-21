@@ -1,4 +1,4 @@
-# OBSTACLE MANUAL TEST:
+# MANUAL TESTS:
 ## Restart Button Test:
 * Step 1: Load into a playable scene with a player and an obstacle.
    - You can do this by selecting the "Play" button when you open the game.
