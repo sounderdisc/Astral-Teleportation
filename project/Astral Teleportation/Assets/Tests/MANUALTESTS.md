@@ -11,6 +11,7 @@
 ## Linked Movement Test:
 
 * Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes
 * Step 2: select play on the top middle of Unity
 * Step 3: change to game view
 * Step 4: Press "A"
