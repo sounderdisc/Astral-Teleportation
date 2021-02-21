@@ -12,7 +12,7 @@
 
 * Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity.
 * Step 2: select play on the top middle of Unity
-* Step 3: 
+* Step 3: change to game view
 * Step 4: Press "A"
    - Both characters should move to the left
 * Step 5: Press "W"
