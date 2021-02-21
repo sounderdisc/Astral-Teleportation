@@ -63,36 +63,27 @@ Team Member | Shivani Kumar
 
 # Sprint 1
 
-- [Product Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Sprint Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Requirements](https://trello.com/b/npc42XxL/pood-project-board)
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
-- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board)
 - [Sprint 1 deliverable](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/TitleScreenDeliverable.PNG)
 
 # Sprint 2
 
 
-- [Product Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Sprint Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Requirements](https://trello.com/b/npc42XxL/pood-project-board)
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
-- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board)
-- [Design Documents](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
+- [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
 - [Demonstration](https://www.youtube.com/watch?v=FiyXJBKtRN0&feature=youtu.be&ab_channel=sounderdiscISW)
 
 # Sprint 3
 
 
-- [Product Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Sprint Backlog](https://trello.com/b/npc42XxL/pood-project-board)
-- [Requirements](https://trello.com/b/npc42XxL/pood-project-board)
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
-- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board)
-- [Design Documents](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
+- [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
 - [Demonstration](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
