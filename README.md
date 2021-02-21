@@ -94,5 +94,5 @@ Team Member | Shivani Kumar
 - [Trello Board](https://trello.com/b/npc42XxL/pood-project-board)
 - [Design Documents](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
-- [Automated Tests](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-- [Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Automated Tests](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
+- [Demonstration](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
