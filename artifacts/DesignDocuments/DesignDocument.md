@@ -8,7 +8,7 @@
 # System Design
 
 ## Program Organization
-- ![low-level class diagrams](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Class_Diagrams_Astral_Teleportation-1.pdf)
+- ![low-level class diagrams](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/UML1.jpg)
 - ![data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 
 The context of the system is minimal; a player and a game. The container is the Unity game engine the system is built in. The components are everything that you could name as a noun in our level mock up; a potal gun, character, obstacle, and the level.
@@ -19,9 +19,9 @@ Finally, the level is a class used to contain various level objects. The level o
 
 ## Major Classes
 - high-level diagrams:  
-<br />  ![context](https://cdn.discordapp.com/attachments/672319862902751232/810361571570090020/unknown.png)
-<br />  ![container](https://cdn.discordapp.com/attachments/672319862902751232/810362380278038558/unknown.png)
-<br />  ![component](https://cdn.discordapp.com/attachments/672319862902751232/810367995658108968/unknown.png)
+<br />  ![context](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Context%20Diagram%202.jpg)
+<br />  ![container](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Container%20Diagram%202.jpg)
+<br />  ![component](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/Component%20Diagram%203.jpg)
 
 The major classes are the potal gun, character, obstacle, and the level itself.
 The portal gun is a class used to contain the portal gun object. The portal gun object is responsible for allowing the player to teleport to different areas of a level in order to reach the goal. The portal gun object will be attached to the character object as an item. The portal gun object will also have two modes, blue mode, and red mode, which differentiate the two character objects and provides a way for multiple portal paths throughout the level.
