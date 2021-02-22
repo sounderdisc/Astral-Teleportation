@@ -30,11 +30,15 @@ Finally, the level is a class used to contain various level objects. The level o
 
 ## Data Design
 - ![data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
-The majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
-Level completion data will be stored in a table, and will keep track of a level ID number in the form of an integer, and a T/F boolean flag marking level completion.
-The player's settings preferences will be stored in a .cs file that will control all of the settings mentioned. Since Unity is focused around components created with .cs scripts, this will be the best way to have the settings stored and will be easily accessible for debugging. 
+The figure above shows all the long term data to store between sessions of running the game, namely level completeion status and user preferences like visual, control, and audio settings. This is in compliance with requirements RID 3, 4, and 19-22. The majority of the data this system uses is stored in memory and resets any time a level is started or restarted.
+
+Looking at the ER diagram on the left of the visual aid above, you can see that level completion data will be stored in a table, and will keep track of a level ID number in the form of an integer, and a T/F boolean flag marking level completion.
+
 If the player always starts at the first level and can only play levels they have previously completed, this information could be stored in a single integer indicating the most recently completed level. However, this requires the player to play through the game in squence starting at level 1. The flexibility from storing a small amount of additional data is worth the cost of storing that data, which is why a list instead of a single integer was the chosen method.
-User settings are a single set of data that could be saved across game sessions in a variety of ways. The visual aid does not represent a table, but instead simply lists what needs to be saved.
+
+The box on the right of the visual aid does not represent a table, but instead simply lists what needs to be saved. The player's settings preferences will be stored in a .txt file that will control all of the settings mentioned. Since we will likely have very few things to store between play sessions, we do not need anything fancy. Additionally, text files are easily accessible for debugging.
+
+On a technical level, the game will read from the text file on startup to know what values to set the variables in memory that control certain user preferences and tracks level completion. Durring gameplay, players can change their settings or complete levels for the first time and this will change the values of the repective varibles which will stay in memory for as long as our game runs. Then before the user closes the program using our UI element, we will write the values of the varaibles in memory to the text file.
 
 ## Business Rules
 The goal of this sytem is to make a professional looking game. As such, the game will aim to run at an optimal frame rate of 30-60 frames per second or higher. Any game assets will also aim to be high quality and matching the aesthetic of our setting. There will be no user information taken, and users are free to download the game on as many devices as they wish. 
