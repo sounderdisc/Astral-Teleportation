@@ -9,7 +9,6 @@
 
 ## Program Organization
 - ![low-level class diagrams](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/UML1.jpg)
-- ![data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 
 The context of the system is minimal; a player and a game. The container is the Unity game engine the system is built in. The components are everything that you could name as a noun in our level mock up; a potal gun, character, obstacle, and the level.
 The portal gun is a class used to contain the portal gun object. The portal gun object is responsible for allowing the player to teleport to different areas of a level in order to reach the goal. The portal gun object will be attached to the character object as an item.
@@ -30,6 +29,7 @@ The obstacle is a class used to contain various obstacle objects. The obstacle o
 Finally, the level is a class used to contain various level objects. The level objects are the bulk of the game, and will contain all the above classes as a means of creating puzzles for the player to navigate.
 
 ## Data Design
+- ![data ER diagram](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/ERD.png)
 The majority of the data this system uses resets any time a level is started or restarted. The data that requires saving are the number of levels that have been completed, and the player's settings preferences which will include visual, control, and audio settings. 
 Level completion data will be stored in a table, and will keep track of a level ID number in the form of an integer, and a T/F boolean flag marking level completion.
 The player's settings preferences will be stored in a .cs file that will control all of the settings mentioned. Since Unity is focused around components created with .cs scripts, this will be the best way to have the settings stored and will be easily accessible for debugging. 
