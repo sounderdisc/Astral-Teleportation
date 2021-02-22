@@ -37,7 +37,7 @@ If the player always starts at the first level and can only play levels they hav
 User settings are a single set of data that could be saved across game sessions in a variety of ways. The visual aid does not represent a table, but instead simply lists what needs to be saved.
 
 ## Business Rules
-Unity requires any business that makes over $100,000 on a program made from their engine to buy the software. Because the system is not being sold for profit, this is not a concern.
+The goal of this sytem is to make a professional looking game. As such, the game will aim to run at an optimal frame rate of 30-60 frames per second or higher. Any game assets will also aim to be high quality and matching the aesthetic of our setting. There will be no user information taken, and users are free to download the game on as many devices as they wish. 
 
 ## User Interface Design
 - ![UI diagram](https://cdn.discordapp.com/attachments/798218681909510154/812868233345368095/ui-diagram.png)
