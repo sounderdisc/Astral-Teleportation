@@ -20,3 +20,10 @@
    - Both characters should jump
 * Step 6: Press "D"
    - Both characters should move to the right
+
+## Obstacle Test:
+* Step 1: Load into a playable scene with a player and an obstacle.
+   - You can do this by selecting the "Play" button when you open the game.
+* Step 2: Move your player towards the obstacle by moving right with the "D" key.
+* Step 3: Upon collision with the obstacle the player should die. 
+* Step 4: Repeat for other player.
