@@ -19,7 +19,7 @@ public class Objective : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player.isDead)
+        if (player.isDead)
         {
             Destroy(gameObject);
             isTaken = false;
@@ -39,7 +39,7 @@ public class Objective : MonoBehaviour
             {
                 Debug.Log("Both objectives taken, loading next level");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            } 
+            }
             else
             {
                 Debug.Log("one objective taken. will not load level until both are taken");
