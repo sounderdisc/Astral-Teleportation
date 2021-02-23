@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   otherObjective: {fileID: 0}
-  blueObjective: 0
+  blueObjective: 1
   isTaken: 0
 --- !u!61 &1830689877410391424
 BoxCollider2D:
