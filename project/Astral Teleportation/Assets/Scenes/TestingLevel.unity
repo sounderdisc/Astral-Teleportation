@@ -1502,6 +1502,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7025993152358057132, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
         type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1152213284}
+    - target: {fileID: 7025993152358057132, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
       propertyPath: hearts.Array.data[0]
       value: 
       objectReference: {fileID: 1060826998}
@@ -1593,6 +1598,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 121349598342581633, guid: d5a5eedd22a8b5c4382078938f5053ab,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1106213325}
     - target: {fileID: 121349598342581633, guid: d5a5eedd22a8b5c4382078938f5053ab,
         type: 3}
       propertyPath: hearts.Array.data[0]
