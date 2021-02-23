@@ -19,6 +19,10 @@ public class PlayerHealthBlue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(health > numberOfHearts)
+        {
+            health = numberOfHearts;
+        }
         for(int i = 0; i < hearts.Length; i++)
         {
             if(i < health)
