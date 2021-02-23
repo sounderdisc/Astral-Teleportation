@@ -7,6 +7,7 @@ public class PlayerHealthBlue : MonoBehaviour
 {
     public int health;
     public int numberOfHearts;
+    public PlayerController player;
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -19,6 +20,10 @@ public class PlayerHealthBlue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(health <= 0)
+            {
+                player.isDead = true;
+            }
         if(health > numberOfHearts)
         {
             health = numberOfHearts;

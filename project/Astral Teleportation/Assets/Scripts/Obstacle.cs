@@ -8,8 +8,8 @@ public class Obstacle : MonoBehaviour
     public PlayerController player;
     public Rigidbody2D _rigidbody2D;
     public PlayerHealthRed redPlayerHealth;
-    public PlayerHealthBlue bluePLayerHealth;
-    public Vector2 knockback = new Vector2();
+    public PlayerHealthBlue bluePlayerHealth;
+
     
     // Start is called before the first frame update
     void Start()
@@ -30,32 +30,31 @@ public class Obstacle : MonoBehaviour
             player = collision.GetComponent<PlayerController>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
             redPlayerHealth = collision.GetComponent<PlayerHealthRed>();
-            float knockbackMultiplier = player.speedModifier * player.speed;
-            
-            knockback = new Vector2(knockbackMultiplier * 2, knockbackMultiplier*2);
-            _rigidbody2D.AddForce(-knockback);
             redPlayerHealth.health -= 1;
-
-            if(redPlayerHealth.health <= 0)
+            player.speedModifier = -player.speedModifier;
+            if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
-                player.isDead = true;
+                _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
             }
-            
+            else
+            {
+                _rigidbody2D.AddForce(transform.up * player.speed, ForceMode2D.Impulse);
+            }
         }
         if(collision.gameObject.tag == "BluePlayer")
         {
             player = collision.GetComponent<PlayerController>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
-            bluePLayerHealth = collision.GetComponent<PlayerHealthBlue>();
-            float knockbackMultiplier = player.speedModifier * player.speed;
-            
-            knockback = new Vector2(knockbackMultiplier * 2, knockbackMultiplier*2);
-            _rigidbody2D.AddForce(-knockback);
-            bluePLayerHealth.health -= 1;
-            
-            if(bluePLayerHealth.health <= 0)
+            bluePlayerHealth = collision.GetComponent<PlayerHealthBlue>();
+            bluePlayerHealth.health -= 1;
+            player.speedModifier = -player.speedModifier;
+            if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
-                player.isDead = true;
+                _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
+            }
+            else
+            {
+                _rigidbody2D.AddForce(transform.up * player.speed, ForceMode2D.Impulse);
             }
         }
     }
