@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1491406975634599458
+--- !u!1 &7283189976067853055
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1491406975634599463}
-  - component: {fileID: 1491406975634599462}
-  - component: {fileID: 1491406977088929815}
-  - component: {fileID: 1491406975634599457}
-  - component: {fileID: 1491406975634599456}
-  - component: {fileID: 1491406975634599459}
+  - component: {fileID: 6748002096434656351}
+  - component: {fileID: 22240656352629510}
+  - component: {fileID: 2696738148901602096}
+  - component: {fileID: 121349598342581633}
+  - component: {fileID: 6205052749680775337}
+  - component: {fileID: 7271145469278843358}
   m_Layer: 0
   m_Name: BlueCharacter
   m_TagString: BluePlayer
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1491406975634599463
+--- !u!4 &6748002096434656351
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3, y: -3, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
@@ -35,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1491406975634599462
+--- !u!212 &22240656352629510
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -85,13 +85,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1491406977088929815
+--- !u!114 &2696738148901602096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a9b89051bcd4aef497cb78567f44ffb, type: 3}
@@ -103,13 +103,13 @@ MonoBehaviour:
   isBlue: 1
   isDead: 0
   rooted: 0
---- !u!114 &1491406975634599457
+--- !u!114 &121349598342581633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ffb057533d55af538ff130209934fa0, type: 3}
@@ -117,21 +117,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   numberOfHearts: 3
-  player: {fileID: 1491406977088929815}
+  player: {fileID: 2696738148901602096}
   hearts:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   fullHeart: {fileID: 21300000, guid: f788af04bc4bf2fa882c86f94163976f, type: 3}
   emptyHeart: {fileID: 21300000, guid: b06b7413007dfcaafb116d2b80e975e4, type: 3}
---- !u!50 &1491406975634599456
+--- !u!50 &6205052749680775337
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -145,13 +145,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &1491406975634599459
+--- !u!70 &7271145469278843358
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491406975634599458}
+  m_GameObject: {fileID: 7283189976067853055}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
