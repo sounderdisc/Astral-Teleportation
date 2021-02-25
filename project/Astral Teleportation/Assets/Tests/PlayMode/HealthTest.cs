@@ -50,7 +50,7 @@ namespace Tests
             healthRemaining = 3;
             yield return null;
             healthRemaining -= 1;
-            Assert.IsTrue(numberOfHearts <= 3);
+            Assert.IsTrue(healthRemaining < 3);
         }
     }
 }
