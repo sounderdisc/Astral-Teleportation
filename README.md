@@ -97,3 +97,5 @@ Team Member | Shivani Kumar
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
 - [Demonstration](TBD)
+## Responsibilities
+- Devon Wilkerson (wilkersonrdevon) - Implement hp and hp graphic. Update character sprites. 
