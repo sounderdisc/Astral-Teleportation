@@ -26,7 +26,7 @@ Project Proposal | 1/30/2021 | Finalize project decision; Develop preliminary pr
 Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop Burndown chart, Sprint Product Backlog, Requirements List, Trello Board, and Velocity chart
 Sprint 2 | 2/14/2021 | Finalize GUI & game mechanics design; Burndown & Velocity chart
 Sprint 3 | 2/21/2021 | Create unit tests, Start development of key features
-Sprint 4 | 2/28/2021 | TBD
+Sprint 4 | 2/28/2021 | Continue unity testing implemented and new features. Implement UI.
 Sprint 5 | 3/7/2021  | TBD
 Sprint 6 | 3/14/2021 | TBD
 Sprint 7 | 3/28/2021 | TBD
@@ -70,7 +70,6 @@ Team Member | Shivani Kumar
 
 # Sprint 2
 
-
 - [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
 - [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
@@ -78,7 +77,6 @@ Team Member | Shivani Kumar
 - [Demonstration](https://www.youtube.com/watch?v=FiyXJBKtRN0&feature=youtu.be&ab_channel=sounderdiscISW)
 
 # Sprint 3
-
 
 - [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
 - [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
@@ -88,3 +86,14 @@ Team Member | Shivani Kumar
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
 - [Demonstration](https://www.youtube.com/watch?v=Qggwj87jH-8&feature=youtu.be&ab_channel=sounderdiscISW)
+
+# Sprint 4
+
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
+- [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
+- [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
+- [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
+- [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
+- [Demonstration](TBD)
