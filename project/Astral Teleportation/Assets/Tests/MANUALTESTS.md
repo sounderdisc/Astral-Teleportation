@@ -32,8 +32,8 @@
 * Step 3: One the objectives are collected the game will proceed to the next level. If a player dies before all objectives are collected the game will have to be restarted.
 
 ## Visually Different Characters Test:
-* Step 1: Load into a playable scene with two characters.
-   - This can be done by selecting the "Play" button when you open the game.
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. Clicking this file should take the user to the scene which will display the characters.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes.
 * Step 2: The characters should be visually different. One being blue and the other red.
 
 ## Level Select Test
