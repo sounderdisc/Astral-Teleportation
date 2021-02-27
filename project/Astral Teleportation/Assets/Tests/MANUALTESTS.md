@@ -34,3 +34,8 @@
 * Step 2: Move your player towards the objectives of their respective colors by pressing the 'A' and 'D' keys until they collide with the objectives.
    - The objectives will be picked up by the players until level completion or death
 * Step 3: One the objectives are collected the game will proceed to the next level. If a player dies before all objectives are collected the game will have to be restarted.
+
+## Visually Different Characters Test:
+* Step 1: Load into a playable scene with two characters.
+   - This can be done by selecting the "Play" button when you open the game.
+* Step 2: The characters should be visually different. One being blue and the other red.
