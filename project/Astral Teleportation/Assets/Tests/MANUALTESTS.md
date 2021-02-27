@@ -1,12 +1,11 @@
 # MANUAL TESTS:
 ## Restart Button Test:
-* Step 1: Load into a playable scene with a player and an obstacle.
-   - This can be done by selecting the "Play" button when you open the game.
-* Step 2: Move your player towards the left or right
-   - This will allow you to move and see if the restart button works properly because your player should be in the same spot when you restart the game.
-* Step 3: Move your mouse to be on the restart button which is at the bottom right of the screen.
-* Step 4: Click once on the restart button.
-* Step 5: Game should have reloaded, and your players should be in the same place they were when you started the game.
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. The game should be displayed.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes.
+* Step 2: Select play on the top middle of Unity. This will allow the game to be playable.
+* Step 3: Change to game view by clicking the Game tab. Clicking the game tab should display the game in game view.
+* Step 4: Move your player towards the left by pressing 'A' or right by pressing 'D'. Pressing one of the buttons should move your player.
+* Step 5: Click once on the restart button which is at the bottom right of the screen. Clicking the button should reload the game and your players should be in the same place they were when you started the game.
 
 ## Linked Movement Test:
 
@@ -48,6 +47,5 @@
 * Step 5: After a level loads or an error is issued, click the play button at the top of the viewport that you clicked in step 1 in order to reset your session. Then click that button again, then the level select button, then test another numbered button. Repeat until you have tried every button.
 
 ## Background Test
-* Step 1: Open the game in Unity.
-* Step 2: Click the play button.
-* Step 3: A playable scene should open with the characters and a background.
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. Clicking this file should take the user to the scene which will display the background.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes.
