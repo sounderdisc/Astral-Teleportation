@@ -9,16 +9,13 @@
 
 ## Linked Movement Test:
 
-* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity.
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. The game should be displayed.
    - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes
-* Step 2: select play on the top middle of Unity
-* Step 3: change to game view
-* Step 4: Press 'A'
-   - Both characters should move to the left
-* Step 5: Press 'W'
-   - Both characters should jump
-* Step 6: Press 'D'
-   - Both characters should move to the right
+* Step 2: Select play on the top middle of Unity. This will allow the game to be playable.
+* Step 3: Change to game view by clicking the Game tab. Clicking the game tab should display the game in game view.
+* Step 4: Press 'A'. Pressing this button should move both characters to the left.
+* Step 5: Press 'W'. Pressing this button should make both characters jump.
+* Step 6: Press 'D'. Pressing this button should move both characters to the right.
 
 ## Obstacle Test:
 * Step 1: Load into a playable scene with a player and an obstacle.
