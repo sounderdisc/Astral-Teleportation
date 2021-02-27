@@ -46,3 +46,8 @@
 * Step 3: Hover over the "Return" button and press it. Confirm that the main menu reappears, then click the "Level Select" button again to return to the level select screen.
 * Step 4: Click one of the numbered buttons. Expect either a level to load or red error text at the bottom of the terminal saying no level of that number exists yet. At the time of writting, for "1" and "2" a level should load and clicking all other numbered buttons should produce an error.
 * Step 5: After a level loads or an error is issued, click the play button at the top of the viewport that you clicked in step 1 in order to reset your session. Then click that button again, then the level select button, then test another numbered button. Repeat until you have tried every button.
+
+## Background Test
+* Step 1: Open the game in Unity.
+* Step 2: Click the play button.
+* Step 3: A playable scene should open with the characters and a background.
