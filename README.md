@@ -27,7 +27,7 @@ Sprint 1 | 2/6/2021  | Inital GUI & game mechanics design; Title Screen Develop 
 Sprint 2 | 2/14/2021 | Finalize GUI & game mechanics design; Burndown & Velocity chart
 Sprint 3 | 2/21/2021 | Create unit tests, Start development of key features
 Sprint 4 | 2/28/2021 | Continue unity testing implemented and new features. Implement UI.
-Sprint 5 | 3/7/2021  | TBD
+Sprint 5 | 3/7/2021  | Continue refining UI. Implement sound and animation to game.
 Sprint 6 | 3/14/2021 | TBD
 Sprint 7 | 3/28/2021 | TBD
 Sprint 8 | 4/4/2021  | TBD
