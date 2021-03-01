@@ -96,6 +96,10 @@ Team Member | Shivani Kumar
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
-- [Demonstration](TBD)
+- [Demonstration](https://www.youtube.com/watch?v=RPNvtI5-0ro&list=PL55Hcw8KAqBgMKtgdaU1lQJ_iHmsr7nef&ab_channel=sounderdiscISW)
 ## Responsibilities
-- Devon Wilkerson (wilkersonrdevon) - Implement hp and hp graphic. Update character sprites. 
+- Devon Wilkerson (wilkersonrdevon) - Implement hp and hp graphic. Update character sprites.
+- Matthew Hubbs (sounderdisc) - Create level select. Update fonts in main menu.
+- Jakob Germann - Create in game timer, refactor UML diagram
+- Shivani - Create stary background, added animation to background
+- Mayank - made the two characters visually distinct
