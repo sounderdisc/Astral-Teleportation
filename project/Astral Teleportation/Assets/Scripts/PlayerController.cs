@@ -5,15 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 5.5f;
+    public float speed = 55f;
     public float speedModifier = 0f;
     public bool isRed;
     public bool isBlue;
     public bool isDead = false;
     public bool rooted = false;
     private Rigidbody2D rb2D;
-    private float jumpForce = 5f;
-    private float speedIncrease = 0.2f;
+    private float jumpForce = 150f;
+    private float speedIncrease = 15f;
+    private float stopMultiplier = 2f;
+    private float stopPlayer = 15f;
 
     
     
@@ -102,14 +104,14 @@ public class PlayerController : MonoBehaviour
 
     public void stopMovement()
     {
-        if(speedModifier > 0.2)
+        if(speedModifier > stopPlayer)
         {
-            speedModifier -= speedIncrease * 1.25f;
+            speedModifier -= speedIncrease * stopMultiplier;
             rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
-        else if(speedModifier < -0.2)
+        else if(speedModifier < -stopPlayer)
         {
-            speedModifier += speedIncrease * 1.25f;
+            speedModifier += speedIncrease * stopMultiplier;
             rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
         else
@@ -120,13 +122,13 @@ public class PlayerController : MonoBehaviour
 
     public void freezePlayerActions()
     {
-        if(speedModifier > 0.2)
+        if(speedModifier > stopPlayer)
         {
             transform.Rotate(new Vector3(0,0,90));
             speedModifier = 0;
             rb2D.velocity = new Vector2(speedModifier, rb2D.velocity.y);
         }
-        else if(speedModifier < -0.2)
+        else if(speedModifier < -stopPlayer)
         {
             transform.Rotate(new Vector3(0,0,-90));
             speedModifier = 0;
