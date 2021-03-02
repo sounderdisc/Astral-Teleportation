@@ -18,17 +18,16 @@
 * Step 6: Press 'D'. Pressing this button should move both characters to the right.
 
 ## Obstacle Test:
-* Step 1: Load into a playable scene with a player and an obstacle.
-   - This can be done by selecting the "Play" button when you open the game.
-* Step 2: Move your player towards the obstacle by moving right with the "D" key.
-* Step 3: Upon collision with the obstacle the player should die. 
-* Step 4: Repeat for other player.
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. The game should be displayed.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes
+* Step 2: Move player towards the obstacle by moving right with the "D" key. Upon collision with the obstacle the player should die. 
+* Step 4: Repeat for other player. Upon collision with the obstacle the player should die as well.
 
 ## Objective Test:
-* Step 1: Load into a playable scene with a player and an obstacle.
-   - This can be done by selecting the "Play" button when you open the game.
-* Step 2: Move your player towards the objectives of their respective colors by pressing the 'A' and 'D' keys until they collide with the objectives.
-   - The objectives will be picked up by the players until level completion or death
+* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. The game should be displayed.
+   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes
+* Step 2: Move your player towards the objectives of their respective colors by pressing the 'A' and 'D' keys. They should collide with the objectives.
+   - The objectives will be picked up by the players until level completion or death.
 * Step 3: One the objectives are collected the game will proceed to the next level. If a player dies before all objectives are collected the game will have to be restarted.
 
 ## Visually Different Characters Test:
