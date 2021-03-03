@@ -1,11 +1,14 @@
 # MANUAL TESTS:
+
 ## Restart Button Test:
-* Step 1: Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity. The game should be displayed.
-   - This can be done by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes.
-* Step 2: Select play on the top middle of Unity. This will allow the game to be playable.
-* Step 3: Change to game view by clicking the Game tab. Clicking the game tab should display the game in game view.
-* Step 4: Move your player towards the left by pressing 'A' or right by pressing 'D'. Pressing one of the buttons should move your player.
-* Step 5: Click once on the restart button which is at the bottom right of the screen. Clicking the button should reload the game and your players should be in the same place they were when you started the game.
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
+| Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
+| Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
+| Step 4 | Move your player towards the left by pressing 'A' or right by pressing 'D'. | When pressing 'A' you should see the player move left. When pressing 'W' you should see the player move right. |
+| Step 5 | Click once on the restart button which is at the bottom right of the screen. | Clicking the button should reload the game and you should see the scene reset and the players should be in the same place they were when you started the game. |
 
 ## Linked Movement Test:
 
