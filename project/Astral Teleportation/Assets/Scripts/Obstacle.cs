@@ -5,16 +5,18 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
 
-    public PlayerController player;
-    public Rigidbody2D _rigidbody2D;
-    public PlayerHealthRed redPlayerHealth;
-    public PlayerHealthBlue bluePlayerHealth;
+    private PlayerController player;
+    private Rigidbody2D _rigidbody2D;
+    private PlayerHealthRed redPlayerHealth;
+    private PlayerHealthBlue bluePlayerHealth;
+    private Animator animator;
+
 
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,8 +27,10 @@ public class Obstacle : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if(collision.gameObject.tag == "RedPlayer")
         {
+            animator.SetInteger("AnimState",1);
             player = collision.GetComponent<PlayerController>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
             redPlayerHealth = collision.GetComponent<PlayerHealthRed>();
@@ -43,6 +47,7 @@ public class Obstacle : MonoBehaviour
         }
         if(collision.gameObject.tag == "BluePlayer")
         {
+            animator.SetInteger("AnimState",1);
             player = collision.GetComponent<PlayerController>();
             _rigidbody2D = collision.GetComponent<Rigidbody2D>();
             bluePlayerHealth = collision.GetComponent<PlayerHealthBlue>();
