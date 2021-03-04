@@ -12,6 +12,8 @@
 
 ## Linked Movement Test:
 
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
@@ -20,6 +22,9 @@
 | Step 6 | Move your player towards the right by pressing 'D'. | When pressing 'D' you should see the player move right. |
 
 ## Obstacle Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
@@ -27,6 +32,9 @@
 | Step 5 | Repeat for the other player by moving right with the 'D' key. | When pressing 'D' you should see the player move right and upon collision with the obstacle the player should die as well. |
 
 ## Objective Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
@@ -34,11 +42,17 @@
 | Step 5 | One the objectives are collected the game will proceed to the next level. If a player dies before all objectives are collected the game will have to be restarted.
 
 ## Visually Different Characters Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view and you should be able to visually see that one character is red and one character is blue. |
 
 ## Level Select Test
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
@@ -50,6 +64,9 @@
 | Step 9 | Then click the play button again, then the level select button, then test another numbered button. Repeat until you have tried every button.
 
 ## Background Test
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view and you should be able to see that the background is visible. |
