@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour
 {
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+            RestartGame();
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene("TestingLevel");
