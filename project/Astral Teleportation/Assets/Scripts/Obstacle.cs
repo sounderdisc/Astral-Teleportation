@@ -10,6 +10,7 @@ public class Obstacle : MonoBehaviour
     private PlayerHealthRed redPlayerHealth;
     private PlayerHealthBlue bluePlayerHealth;
     private Animator animator;
+    private AudioSource hitSource;
 
 
     
@@ -17,6 +18,7 @@ public class Obstacle : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        hitSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class Obstacle : MonoBehaviour
             redPlayerHealth = collision.GetComponent<PlayerHealthRed>();
             redPlayerHealth.health -= 1;
             player.speedModifier = -player.speedModifier;
+            hitSource.Play();
             if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
                 _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
@@ -53,6 +56,7 @@ public class Obstacle : MonoBehaviour
             bluePlayerHealth = collision.GetComponent<PlayerHealthBlue>();
             bluePlayerHealth.health -= 1;
             player.speedModifier = -player.speedModifier;
+            hitSource.Play();
             if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
                 _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
