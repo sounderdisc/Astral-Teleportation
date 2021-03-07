@@ -7,6 +7,8 @@ public class TimerScript : MonoBehaviour
 { 
 
     float currentTime;
+    int seconds;
+    int minutes;
     
 
     [SerializeField] Text countDownText;
@@ -21,15 +23,16 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Decrease current time by 1 in real time, not by fps
+        // Increase current time by 1 in real time, not by fps
         currentTime += 1 * Time.deltaTime;
-
-        countDownText.text = currentTime.ToString("0");
-
-        if(currentTime <= 0)
-        {
-            currentTime = 0;
-        }
+        // seperate into minutes and seconds
+        minutes = (int)currentTime / 60;
+        seconds = (int)currentTime - ((int)currentTime / 60);
+        // make sure seconds displays correctly, adding a 0 for seconds less than 10
+        if (seconds >= 10)
+            countDownText.text = minutes + ":" + seconds;
+        else
+            countDownText.text = minutes + ":0" + seconds;
     }
 
 }
