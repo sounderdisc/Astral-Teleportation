@@ -78,3 +78,15 @@
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
 | Step 4 | Move your player towards the obstacle by moving right with the 'D' key. | When pressing 'D' you should see the player move right and the animation should animate/move. |
+
+## Pause Button Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
+| Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
+| Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
+| Step 4 | Press the Pause button that is at the top right OR press ESC key. | When pressing the Pause button, the game should pause. When pressing the 'ESC' key the game should pause. |
+| Step 5 | Press the 'ESC' key to unpause. | Pressing the 'ESC' key again should unpause the game. |
+
+
