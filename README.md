@@ -118,5 +118,22 @@ Team Member | Shivani Kumar
 - Devon Wilkerson (wilkersonrdevon) - Animate obstacles, create different variety to encounter.
 - Matthew Hubbs (sounderdisc) - Pause menu and finishing timer
 - Jakob Germann - Sounds and music
-- Shivani - upkeep github documents
+- Shivani - Write tests, upkeep github documents
 - Mayank - New Sprite for player character
+
+# Sprint 6
+
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
+- [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
+- [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
+- [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
+- [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
+- [Demonstration]()
+## Responsibilities
+- Devon Wilkerson (wilkersonrdevon) - Create tile map, Add levels
+- Matthew Hubbs (sounderdisc) - 
+- Jakob Germann - 
+- Shivani - 
+- Mayank -
