@@ -113,7 +113,7 @@ Team Member | Shivani Kumar
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
-- [Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Demonstration](https://youtu.be/rnrkt_qLIWQ)
 ## Responsibilities
 - Devon Wilkerson (wilkersonrdevon) - Animate obstacles, create different variety to encounter.
 - Matthew Hubbs (sounderdisc) - Pause menu and finishing timer
