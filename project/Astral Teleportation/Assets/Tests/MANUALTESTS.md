@@ -104,3 +104,12 @@
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view and you should be able to visually see that both red and blue characters are space themed characters. |
+
+## Sound Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
+| Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
+| Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
+| Step 4 | Move your player towards the obstacle by moving right with the 'D' key. | When pressing 'D' you should see the player move right and a sound should be heard when player comes in contact with obstacle. |
