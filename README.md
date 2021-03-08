@@ -116,7 +116,7 @@ Team Member | Shivani Kumar
 - [Demonstration](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 ## Responsibilities
 - Devon Wilkerson (wilkersonrdevon) - Animate obstacles, create different variety to encounter.
-- Matthew Hubbs (sounderdisc) - 
-- Jakob Germann - 
-- Shivani - 
-- Mayank - 
+- Matthew Hubbs (sounderdisc) - Pause menu and finishing timer
+- Jakob Germann - Sounds and music
+- Shivani - upkeep github documents
+- Mayank - New Sprite for player character
