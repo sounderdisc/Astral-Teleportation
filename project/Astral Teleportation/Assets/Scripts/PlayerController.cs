@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
     public bool rooted = false;
     private Rigidbody2D rb2D;
+    private SpriteRenderer spriteRenderer;
     private float jumpForce = 150f;
     private float speedIncrease = 15f;
     private float stopMultiplier = 2f;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2D = gameObject.GetComponent<Rigidbody2D>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
     public void moveLeft()
     {
+        spriteRenderer.flipX = true;
         if(!isDead)
         {
             if(speedModifier > -(speed))
@@ -80,6 +83,7 @@ public class PlayerController : MonoBehaviour
 
     public void moveRight()
     {
+        spriteRenderer.flipX = false;
         if(!isDead)
         {
             if(speedModifier < speed)
