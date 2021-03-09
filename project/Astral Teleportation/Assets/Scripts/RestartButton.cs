@@ -14,6 +14,6 @@ public class RestartButton : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("TestingLevel");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
