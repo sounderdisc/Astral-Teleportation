@@ -19,6 +19,8 @@ TagManager:
   - 8
   - 9
   - 10
+  - RedPortal
+  - BluePortal
   layers:
   - Default
   - TransparentFX
