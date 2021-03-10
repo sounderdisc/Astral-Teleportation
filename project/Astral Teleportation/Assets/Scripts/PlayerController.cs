@@ -7,13 +7,13 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 55f;
     public float speedModifier = 0f;
+    public float jumpForce = 150f;
     public bool isRed;
     public bool isBlue;
     public bool isDead = false;
     public bool rooted = false;
     private Rigidbody2D rb2D;
     private SpriteRenderer spriteRenderer;
-    private float jumpForce = 150f;
     private float speedIncrease = 15f;
     private float stopMultiplier = 2f;
     private float stopPlayer = 15f;
