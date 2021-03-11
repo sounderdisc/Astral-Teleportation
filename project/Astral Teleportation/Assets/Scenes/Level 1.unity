@@ -873,6 +873,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8176740360583684394, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 73.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
 --- !u!1001 &1876119937
