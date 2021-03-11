@@ -27,7 +27,7 @@ public class TimerScript : MonoBehaviour
         currentTime += 1 * Time.deltaTime;
         // seperate into minutes and seconds
         minutes = (int)currentTime / 60;
-        seconds = (int)currentTime - ((int)currentTime / 60);
+        seconds = (int)currentTime - (minutes * 60);
         // make sure seconds displays correctly, adding a 0 for seconds less than 10
         if (seconds >= 10)
             countDownText.text = minutes + ":" + seconds;
