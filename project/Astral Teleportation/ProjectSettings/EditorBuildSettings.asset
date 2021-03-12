@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1.unity
     guid: c142d7dea9b8cfa29b0209b61871b6a0
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/testingScenes/PortalTest.unity
     guid: e8e5afe93b031bfbca5b294bb2f6b318
   - enabled: 1
     path: Assets/Scenes/DummyLevel.unity
