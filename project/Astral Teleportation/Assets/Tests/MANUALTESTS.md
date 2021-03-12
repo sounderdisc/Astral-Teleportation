@@ -113,3 +113,11 @@
 | Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
 | Step 4 | Move your player towards the obstacle by moving right with the 'D' key. | When pressing 'D' you should see the player move right and a sound should be heard when player comes in contact with obstacle. |
+
+## Portal Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "PortalTest" file in Assests->Scenes->testingScenes. | This will open up the scene in unity, and you should see the scene in the viewport. |
+| Step 2 | Select play on the top middle of Unity. This will make the game begin to play. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
+| Step 3 | There is a portal above the blue character's head in this scene. Jump with the 'W' key. | When pressing 'W' you should see the blue character move up and intersect the portal above its head. When this overlap happens, the character should be teleported instantly to the other, red, portal. |
