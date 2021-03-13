@@ -121,3 +121,13 @@
 | Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "PortalTest" file in Assests->Scenes->testingScenes. | This will open up the scene in unity, and you should see the scene in the viewport. |
 | Step 2 | Select play on the top middle of Unity. This will make the game begin to play. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
 | Step 3 | There is a portal above the blue character's head in this scene. Jump with the 'W' key. | When pressing 'W' you should see the blue character move up and intersect the portal above its head. When this overlap happens, the character should be teleported instantly to the other, red, portal. |
+
+## Decoration Test:
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load any scene at Assets/Scenes/ by double clicking a scene in Unity | This should open the scene of choice inside of Unity |
+| Step 2 | Navigate to the decoration prefab folder at Assets/Prefabs/Decoration_Prefabs/ | This should list all available decoration prefabs available |
+| Step 3 | Click and drag any decoration prefab into the editor window | The decoration should appear where the prefab was placed inside the editor |
+| Step 4 | Check that the prefab has been placed successfully and has the proper components | Each decoration prefab should have a rigidbody 2D component and a box collider 2D component fit to the sprite |
+| Step 5 | Continue checking each decoration prefab in the same way as steps 1 - 4 | This should confirm that all prefabs are working correctly and have the correct components |
+
