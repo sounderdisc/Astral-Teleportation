@@ -38,7 +38,7 @@ public class Obstacle : MonoBehaviour
             redPlayerHealth = collision.GetComponent<PlayerHealthRed>();
             redPlayerHealth.health -= 1;
             player.speedModifier = -player.speedModifier;
-            hitSource.Play();
+            hitSource.Play(); //Play the sound of damage being taken
             if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
                 _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
@@ -56,7 +56,7 @@ public class Obstacle : MonoBehaviour
             bluePlayerHealth = collision.GetComponent<PlayerHealthBlue>();
             bluePlayerHealth.health -= 1;
             player.speedModifier = -player.speedModifier;
-            hitSource.Play();
+            hitSource.Play(); //Play the damage sound
             if(player.speedModifier < 0.2 || player.speedModifier > 0.2)
             {
                 _rigidbody2D.AddForce(transform.up * player.speedModifier/2, ForceMode2D.Impulse);
