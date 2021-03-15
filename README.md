@@ -130,10 +130,10 @@ Team Member | Shivani Kumar
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
-- [Demonstration]()
+- [Demonstration](https://www.youtube.com/watch?v=T63ZCuBPUZU)
 ## Responsibilities
 - Devon Wilkerson (wilkersonrdevon) - Create tile map, Add levels
-- Matthew Hubbs (sounderdisc) - 
-- Jakob Germann - 
-- Shivani - 
-- Mayank -
+- Matthew Hubbs (sounderdisc) - Created portals, demo video
+- Jakob Germann - music added
+- Shivani - Added levels
+- Mayank - Began portal gun aiming
