@@ -12,17 +12,25 @@ public class Portal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        firepoint = transform.FindChild("FirePoint");
+        firepoint = transform.Find("FirePoint");
         if(firepoint == null){
-            Debug.LogError (" no firepoint found!!");
+            Debug.Log (" no firepoint found!!");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if( Input.GetButtonDown ("Fire1")){
-            Shoot();
+        if(fireRate == 0 ){
+            if( Input.GetButtonDown ("Fire1")){
+                Shoot();
+            }
+        }
+        else {
+            if( Input.GetButton("Fire1") && Time.time > timeToFire){
+                timeToFire = Time.time + 1/fireRate;
+                Shoot();
+            }
         }
     }
 

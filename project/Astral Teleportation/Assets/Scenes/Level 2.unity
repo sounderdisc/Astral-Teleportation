@@ -10069,6 +10069,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a755685d1bb890468e401585438eb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1183424057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7514761076621975490, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+    type: 3}
+  m_PrefabInstance: {fileID: 7514761076589252013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1183424062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183424057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3138ae0b7590b4445b98a06b2b079896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1225477716 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 866716604279173156, guid: 0ed08705497526642817c2c7e92793db,
@@ -10927,6 +10945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RedCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514761076621975516, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
