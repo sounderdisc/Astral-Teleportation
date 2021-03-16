@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 1539520586, guid: a7f51b83d84bebf41ad4505960940722, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 461930771}
+      objectReference: {fileID: 0}
     - target: {fileID: 1539520586, guid: a7f51b83d84bebf41ad4505960940722, type: 3}
       propertyPath: otherObjective
       value: 
@@ -410,7 +410,7 @@ PrefabInstance:
     - target: {fileID: 866716603255562613, guid: 0ed08705497526642817c2c7e92793db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 866716603255562613, guid: 0ed08705497526642817c2c7e92793db,
         type: 3}
@@ -664,6 +664,21 @@ PrefabInstance:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 339979336}
+    - target: {fileID: 2688628108208432786, guid: d5a5eedd22a8b5c4382078938f5053ab,
+        type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 339979338}
+    - target: {fileID: 2688628108208432786, guid: d5a5eedd22a8b5c4382078938f5053ab,
+        type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 339979337}
+    - target: {fileID: 2688628108208432786, guid: d5a5eedd22a8b5c4382078938f5053ab,
+        type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 339979336}
     - target: {fileID: 6748002096434656351, guid: d5a5eedd22a8b5c4382078938f5053ab,
         type: 3}
       propertyPath: m_RootOrder
@@ -726,18 +741,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a5eedd22a8b5c4382078938f5053ab, type: 3}
---- !u!114 &461930771 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2696738148901602096, guid: d5a5eedd22a8b5c4382078938f5053ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 461930770}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9b89051bcd4aef497cb78567f44ffb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &925189110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -758,7 +761,7 @@ PrefabInstance:
     - target: {fileID: 7303630229965424147, guid: ea8acb41a7e36d24b9df98581aec2d6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7303630229965424147, guid: ea8acb41a7e36d24b9df98581aec2d6c,
         type: 3}
@@ -951,6 +954,21 @@ PrefabInstance:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 339979335}
+    - target: {fileID: 7514761075628122067, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 339979340}
+    - target: {fileID: 7514761075628122067, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 339979339}
+    - target: {fileID: 7514761075628122067, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 339979335}
     - target: {fileID: 8176740360583684394, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
         type: 3}
       propertyPath: m_Size.y
@@ -958,18 +976,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
---- !u!114 &1201049117 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1580921870873259622, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
-    type: 3}
-  m_PrefabInstance: {fileID: 1201049116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9b89051bcd4aef497cb78567f44ffb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1299978977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1055,7 +1061,7 @@ PrefabInstance:
     - target: {fileID: 601095671, guid: 14242fc7341bca144af39770d91f241d, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1201049117}
+      objectReference: {fileID: 0}
     - target: {fileID: 601095671, guid: 14242fc7341bca144af39770d91f241d, type: 3}
       propertyPath: otherObjective
       value: 
