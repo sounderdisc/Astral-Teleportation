@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 300
   speedModifier: 0
-  jumpForce: 300
+  jumpForce: 375
   isRed: 1
   isBlue: 0
   isDead: 0
