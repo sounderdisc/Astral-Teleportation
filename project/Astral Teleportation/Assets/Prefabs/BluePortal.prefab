@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a755685d1bb890468e401585438eb88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherPortal: {fileID: 0}
+  otherPortal: {fileID: 7352395287641387270, guid: 8231271164cd16d4eb8a12457be8e870,
+    type: 3}
   onCooldown: 0
   timeOnCooldown: 0

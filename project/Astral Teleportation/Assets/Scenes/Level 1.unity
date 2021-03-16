@@ -340,7 +340,7 @@ PrefabInstance:
     - target: {fileID: 601095671, guid: 14242fc7341bca144af39770d91f241d, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1415337439}
+      objectReference: {fileID: 1854428845}
     - target: {fileID: 601095671, guid: 14242fc7341bca144af39770d91f241d, type: 3}
       propertyPath: otherObjective
       value: 
@@ -701,18 +701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c24c9d6d412669c48b21adfcf4cb6328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1062190886 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2696738148901602096, guid: d5a5eedd22a8b5c4382078938f5053ab,
-    type: 3}
-  m_PrefabInstance: {fileID: 1391625954}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9b89051bcd4aef497cb78567f44ffb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1261880473
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,11 +866,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5a5eedd22a8b5c4382078938f5053ab, type: 3}
---- !u!114 &1415337439 stripped
+--- !u!114 &1391625955 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1580921870873259622, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+  m_CorrespondingSourceObject: {fileID: 111550793646745635, guid: d5a5eedd22a8b5c4382078938f5053ab,
     type: 3}
-  m_PrefabInstance: {fileID: 1854428844}
+  m_PrefabInstance: {fileID: 1391625954}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -900,7 +888,7 @@ PrefabInstance:
     - target: {fileID: 8233451015805031525, guid: 5afcaea52bb1cdaa08139a362ae6b5e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8233451015805031525, guid: 5afcaea52bb1cdaa08139a362ae6b5e9,
         type: 3}
@@ -1041,8 +1029,45 @@ PrefabInstance:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 479420270}
+    - target: {fileID: 8852500500018836388, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852500500018836388, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852500500018836388, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 271
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852500500018836388, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8852500500018836388, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
+--- !u!114 &1854428845 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7514761075858502550, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+    type: 3}
+  m_PrefabInstance: {fileID: 1854428844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9b89051bcd4aef497cb78567f44ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1876119937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1053,7 +1078,7 @@ PrefabInstance:
     - target: {fileID: 1539520586, guid: a7f51b83d84bebf41ad4505960940722, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1062190886}
+      objectReference: {fileID: 1391625955}
     - target: {fileID: 1539520586, guid: a7f51b83d84bebf41ad4505960940722, type: 3}
       propertyPath: otherObjective
       value: 
