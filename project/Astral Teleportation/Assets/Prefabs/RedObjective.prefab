@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcef65e263d78e04cbcd1bc789376f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  otherObjective: {fileID: 0}
+  player: {fileID: 7514761075858502550, guid: 57a1e48196fd9a71d9ed92cb45cb6717, type: 3}
+  otherObjective: {fileID: 1539520586, guid: a7f51b83d84bebf41ad4505960940722, type: 3}
   isRed: 1
   isTaken: 0
