@@ -10087,6 +10087,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3138ae0b7590b4445b98a06b2b079896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: 0
+  notToHit:
+    serializedVersion: 2
+    m_Bits: 0
+  redPortalPrefab: {fileID: 7352395287641387271, guid: 8231271164cd16d4eb8a12457be8e870,
+    type: 3}
+  currentRedPortal: {fileID: 415868679}
 --- !u!114 &1225477716 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 866716604279173156, guid: 0ed08705497526642817c2c7e92793db,
