@@ -14,7 +14,7 @@ public class PortalCollision : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         portalSound = GetComponent<AudioSource>();
-        if ((collision.gameObject.tag == "RedPlayer" || collision.gameObject.tag == "BluePlayer") && !onCooldown)
+        if ((collision.gameObject.tag == "RedPlayer" || collision.gameObject.tag == "BluePlayer") && !onCooldown && otherPortal != null)
         {
             Debug.Log(collision.gameObject.tag + " has collided with " + gameObject.tag);
             portalSound.Play(); //Play the warping sound
