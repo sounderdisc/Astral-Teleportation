@@ -209,6 +209,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 635989487, guid: aa79082b7f15ececea7fad8a4860f73c, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e50ecec58e7df7f4687fb16dca958d3f, type: 3}
     - target: {fileID: 2163191652073631819, guid: aa79082b7f15ececea7fad8a4860f73c,
         type: 3}
       propertyPath: m_Name
@@ -367,6 +371,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1329531556, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.8000488
+      objectReference: {fileID: 0}
     - target: {fileID: 1329531558, guid: 0ed08705497526642817c2c7e92793db, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -410,7 +418,7 @@ PrefabInstance:
     - target: {fileID: 866716603255562613, guid: 0ed08705497526642817c2c7e92793db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 866716603255562613, guid: 0ed08705497526642817c2c7e92793db,
         type: 3}
@@ -761,7 +769,7 @@ PrefabInstance:
     - target: {fileID: 7303630229965424147, guid: ea8acb41a7e36d24b9df98581aec2d6c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7303630229965424147, guid: ea8acb41a7e36d24b9df98581aec2d6c,
         type: 3}
