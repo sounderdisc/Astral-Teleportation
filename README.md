@@ -147,10 +147,10 @@ Team Member | Shivani Kumar
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
-- [Demonstration]()
+- [Demonstration](https://www.youtube.com/watch?v=Hr7Pnbv595s)
 ## Responsibilities
 - Devon Wilkerson (wilkersonrdevon) - Continue adding levels
-- Matthew Hubbs (sounderdisc) - 
-- Jakob Germann - 
+- Matthew Hubbs (sounderdisc) - portal creating/deletion by player on click
+- Jakob Germann - sound effect design
 - Shivani - Continue adding levels
-- Mayank - 
+- Mayank - added arm and portal gun rotation around character's body
