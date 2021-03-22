@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 7514761076621975519}
   - component: {fileID: 7514761076621975516}
   - component: {fileID: 7514761076621975518}
+  - component: {fileID: 7943318037430249895}
   m_Layer: 0
   m_Name: RedArm
   m_TagString: Untagged
@@ -285,6 +286,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d2e9a60e2a4b147b7f42d96dc52839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7943318037430249895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7514761076621975490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3138ae0b7590b4445b98a06b2b079896, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0
+  notToHit:
+    serializedVersion: 2
+    m_Bits: 0
+  redPortalPrefab: {fileID: 7352395287641387271, guid: 8231271164cd16d4eb8a12457be8e870,
+    type: 3}
+  bluePortalPrefab: {fileID: 9018433479587095510, guid: 4194dd0e1c0ce6f40bdb260c93a12867,
+    type: 3}
+  currentRedPortal: {fileID: 0}
+  currentBluePortal: {fileID: 0}
 --- !u!1 &8527789263618453572
 GameObject:
   m_ObjectHideFlags: 0
