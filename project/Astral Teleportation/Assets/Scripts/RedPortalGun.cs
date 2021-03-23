@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class RedPortalGun : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class RedPortalGun : MonoBehaviour
     public GameObject bluePortalPrefab;
     public GameObject currentRedPortal;
     public GameObject currentBluePortal;
+    public AudioSource portalShootSound;
 
     float timeToFire = 0f;
     Transform firepoint;
     // Start is called before the first frame update
     void Start()
     {
+        portalShootSound = GetComponent<AudioSource>();
         firepoint = transform.Find("FirePoint");
         if(firepoint == null){
             Debug.Log (" no firepoint found!!");
@@ -60,6 +63,7 @@ public class RedPortalGun : MonoBehaviour
         // Debug.Log("shooting on left click");
         // we can change this functionality later, but for now, one step at a time
         SpawnRedAtCursorLocation();
+        portalShootSound.Play();
     }
 
     void SpawnRedAtCursorLocation()
@@ -103,6 +107,7 @@ public class RedPortalGun : MonoBehaviour
 
     void ShootBlue() {
         SpawnBlueAtCursorLocation();
+        portalShootSound.Play();
     }
 
     void SpawnBlueAtCursorLocation()
