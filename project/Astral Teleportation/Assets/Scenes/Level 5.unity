@@ -982,6 +982,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1246980227, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.4050293
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246980228, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Use your portal gun to make portals and avoid the spikes.
+      objectReference: {fileID: 0}
     - target: {fileID: 1329531556, guid: 0ed08705497526642817c2c7e92793db, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.7999878
@@ -1120,6 +1128,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 866716604110818011, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -34.600037
+      objectReference: {fileID: 0}
+    - target: {fileID: 866716604110818011, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.400024
+      objectReference: {fileID: 0}
+    - target: {fileID: 866716604374773556, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -32.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 866716604374773556, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.5999756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ed08705497526642817c2c7e92793db, type: 3}
