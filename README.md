@@ -154,3 +154,20 @@ Team Member | Shivani Kumar
 - Jakob Germann - sound effect design
 - Shivani - Continue adding levels
 - Mayank - added arm and portal gun rotation around character's body
+
+# Sprint 8
+
+- [Trello Board](https://trello.com/b/npc42XxL/pood-project-board) (Backlog and Requirements)
+- [Burndown Chart](https://docs.google.com/spreadsheets/d/1dyKPcBdejwu5LNFCsUgA5GAEMVjf2XFfBYub6vZLVjk/edit?ts=601b030b#gid=0)
+- [Velocity Chart](https://docs.google.com/spreadsheets/d/1Xw9gIy1tj-ZYTZUkK-leNXR6NtBZgtkLZx3mCwNzwJQ/edit?usp=sharing)
+- [System Architecture](https://github.com/sounderdisc/POOPproject/blob/main/artifacts/DesignDocuments/DesignDocument.md)
+- [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
+- [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
+- [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
+- [Demonstration]()
+## Responsibilities
+- Devon Wilkerson (wilkersonrdevon) - Implement hints
+- Matthew Hubbs (sounderdisc) - 
+- Jakob Germann - 
+- Shivani -
+- Mayank - 
