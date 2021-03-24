@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 55f;
+    public float speed = 300f;
     public float speedModifier = 0f;
     public float jumpForce = 150f;
     public bool isRed;
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool rooted = false;
     private Rigidbody2D rb2D;
     private SpriteRenderer spriteRenderer;
+    private PlayerController player;
     private float speedIncrease = 15f;
     private float stopMultiplier = 2f;
     private float stopPlayer = 15f;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = gameObject.GetComponent<PlayerController>();
         rb2D = gameObject.GetComponent<Rigidbody2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
@@ -61,6 +63,34 @@ public class PlayerController : MonoBehaviour
         else
         {
             freezePlayerActions();
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name == "RedCharacter")
+        {
+            var otherRB = collision.gameObject.GetComponent<Rigidbody2D>();
+            var otherPlayer = 
+                collision.gameObject.GetComponent<PlayerController>();
+            if(rb2D.position.x < otherRB.position.x)
+            {
+                Debug.Log("Blue left of Red");
+                player.speedModifier = -player.speed;
+                otherPlayer.speedModifier = otherPlayer.speed;
+            }
+            if(rb2D.position.x > otherRB.position.x)
+            {
+                Debug.Log("Red left of Blue");
+                player.speedModifier = player.speed;
+                otherPlayer.speedModifier = -otherPlayer.speed;
+            }
+            if(rb2D.position.x == otherRB.position.x)
+            {
+                Debug.Log("Red/Blue on Red/Blue");
+                player.speedModifier = player.speed;
+                otherPlayer.speedModifier = -otherPlayer.speed;
+            }
         }
     }
 
