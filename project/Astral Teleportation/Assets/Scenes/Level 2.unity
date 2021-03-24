@@ -10425,6 +10425,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1246980227, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.4050293
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246980228, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Use 'W' to Jump on the stairs.
+      objectReference: {fileID: 0}
     - target: {fileID: 1329531556, guid: 0ed08705497526642817c2c7e92793db, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.7999878
@@ -10557,6 +10565,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: fc764e33d878df02f8d8a9254f549858, type: 2}
+    - target: {fileID: 866716604110818011, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -34.600037
+      objectReference: {fileID: 0}
+    - target: {fileID: 866716604110818011, guid: 0ed08705497526642817c2c7e92793db,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.400024
+      objectReference: {fileID: 0}
     - target: {fileID: 866716604374773556, guid: 0ed08705497526642817c2c7e92793db,
         type: 3}
       propertyPath: m_AnchoredPosition.x
