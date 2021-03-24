@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 7775622012526176144}
   - component: {fileID: 7775622012526176145}
   - component: {fileID: 7775622012526176143}
+  - component: {fileID: 999925307601010287}
   m_Layer: 0
   m_Name: BlueArm
   m_TagString: Untagged
@@ -284,3 +285,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07d2e9a60e2a4b147b7f42d96dc52839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &999925307601010287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775622012526176147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13048d9a83bb0fd47956f4fcd224a9a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validTargets:
+    serializedVersion: 2
+    m_Bits: 0
+  bluePortalPrefab: {fileID: 9018433479587095510, guid: 4194dd0e1c0ce6f40bdb260c93a12867,
+    type: 3}
+  currentRedPortal: {fileID: 0}
+  currentBluePortal: {fileID: 0}
+  portalShootSound: {fileID: 0}
+  debugPortalMode: 0
+  onCooldown: 0
+  timeOnCooldown: 0
