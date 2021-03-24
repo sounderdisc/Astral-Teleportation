@@ -371,6 +371,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1246980228, guid: 0ed08705497526642817c2c7e92793db, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Make sure you have a way out.
+      objectReference: {fileID: 0}
     - target: {fileID: 1329531556, guid: 0ed08705497526642817c2c7e92793db, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.8000488
