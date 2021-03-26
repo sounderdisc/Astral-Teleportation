@@ -44,7 +44,7 @@ On a technical level, the game will read from the text file on startup to know w
 The goal of this sytem is to make a professional looking game. As such, the game will aim to run at an optimal frame rate of 30-60 frames per second or higher. Any game assets will also aim to be high quality and matching the aesthetic of our setting. There will be no user information taken, and users are free to download the game on as many devices as they wish. 
 
 ## User Interface Design
-- ![UI mock-up](https://cdn.discordapp.com/attachments/805891497286959175/821475813534072922/ui-mockup.png)
+- ![UI mock-up](https://cdn.discordapp.com/attachments/805891497286959175/825130092912836628/ui-mockup.png)
 - ![UI diagram](https://cdn.discordapp.com/attachments/672319862902751232/817527744907968542/ui-diagram.png)
 
 The first image is the UI mock-up. The second image is the UI diagram, which explains the mock-up more in depth. The user interface is catagorized into two groups: settings and in-game. Both use commonly used conventions that are familiar to players. The settings button is clickable and leads to more specific screens, such as controlling music volume. In game, the player will use the WAS keys to move to the left and right as well as jump, and mouse buttons to shoot a red or blue portal at the location which the mouse cursor is at. There will also be a levels button, which will show the player the levels that they have completed and can go to replay those levels again. The last button that the user interface will have is the quit button to allow the user to quit the game.
