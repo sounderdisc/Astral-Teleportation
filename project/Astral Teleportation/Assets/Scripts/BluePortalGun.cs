@@ -29,7 +29,6 @@ public class BluePortalGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // well, this fixes our double portal shooting problem
         if (onCooldown)
         {
             timeOnCooldown += 1 * Time.deltaTime;
@@ -46,11 +45,6 @@ public class BluePortalGun : MonoBehaviour
                 ShootBlue();
             }
         }
-        // Debug.DrawLine(this.transform.position, this.transform.position + this.transform.right * 200, Color.green, 2);
-        // Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        // Vector2 direction = (Vector2)((worldMousePos - this.transform.position));
-        // direction.Normalize();
-        // Debug.DrawRay(this.transform.position, direction * 200, Color.green, 10);
     }
 
     void ShootBlue()
@@ -65,6 +59,7 @@ public class BluePortalGun : MonoBehaviour
             }
             else
             {
+                portalShootSound.Play();
                 SpawnBlueUsingRaycast();
             }
         }
