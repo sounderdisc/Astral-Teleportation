@@ -71,9 +71,13 @@ public class BluePortalGun : MonoBehaviour
         Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (Vector2)((worldMousePos - this.transform.position));
         direction.Normalize();
+
         Debug.DrawRay(this.transform.position, direction * 200, Color.blue, 10);
-        // do raycast, get location of hit
+
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, float.PositiveInfinity, validTargets);
+
+        Quaternion hitObjectRotation = Quaternion.LookRotation(hit.normal);
+
         if (hit.collider == null)
         {
             return;
@@ -97,6 +101,22 @@ public class BluePortalGun : MonoBehaviour
             Destroy(currentBluePortal);
         }
         currentBluePortal = newPortal;
+        // rotation of new portal happens here
+        Debug.Log("Quaternion: x:" + hitObjectRotation[0] + "y:" + hitObjectRotation[1]);
+        if (hitObjectRotation[0] < 0)
+        {
+            Debug.Log("rotating");
+            newPortal.transform.Rotate(Vector3.back);
+        }
+        newPortal.transform.rotation = hitObjectRotation;
+        if (hitObjectRotation[0] != 0)
+        {
+            newPortal.transform.Rotate(new Vector3(90, 90, 0));
+        }
+        if (hitObjectRotation[1] != 0)
+        {
+            newPortal.transform.Rotate(new Vector3(0, 90, 0));
+        }
     }
 }
 
