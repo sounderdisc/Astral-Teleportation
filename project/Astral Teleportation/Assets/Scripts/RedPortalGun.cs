@@ -116,24 +116,19 @@ public class RedPortalGun : MonoBehaviour
 
     void SpawnRedUsingRaycast()
     {
-        // find fire direction for the shot
         Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 direction = (Vector2)((worldMousePos - this.transform.position));
         direction.Normalize();
-        Debug.DrawRay(this.transform.position, direction * 200, Color.red, 10);
-        // do raycast, get location of hit
+        
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, direction, float.PositiveInfinity, validTargets);
+        
+        Quaternion hitObjectRotation = Quaternion.LookRotation(hit.normal);
+
         if (hit.collider == null)
         {
             return;
         }
-        Debug.Log("red raycast hit & location: " + hit.collider.name + " @ " + hit.point);
-        // Vector3 spawnLocation = hit.collider.gameObject.transform.position;
-        Vector2 spawnLocation = hit.point;
-        // spawnLocation.z = 662.0625f;
-        GameObject newPortal = Instantiate(redPortalPrefab, spawnLocation, Quaternion.identity);
-        // now lets fix our references so the portals are connected and actually move players
-        // first, let's see if the other color's gun has fired since the Start() function
+        GameObject newPortal = Instantiate(redPortalPrefab, hit.point, Quaternion.identity);
         currentBluePortal = GameObject.Find("BluePortal(Clone)");
         if (currentBluePortal != null)
         {
@@ -146,7 +141,19 @@ public class RedPortalGun : MonoBehaviour
         {
             Destroy(currentRedPortal);
         }
+        Debug.Log("Quaternion: x:" + hitObjectRotation[0] + "y:" + hitObjectRotation[1]);
+        if(hitObjectRotation[0] < 0){
+            Debug.Log("rotating");
+            newPortal.transform.Rotate(Vector3.back);
+        }
         currentRedPortal = newPortal;
+        currentRedPortal.transform.rotation = hitObjectRotation;
+        if(hitObjectRotation[0] != 0){
+            currentRedPortal.transform.Rotate(new Vector3(90,90,0));
+        }
+        if(hitObjectRotation[1] != 0){
+            currentRedPortal.transform.Rotate(new Vector3(0,90,0));
+        }
     }
 
     void SpawnRedAtCursorLocation()
