@@ -38,37 +38,6 @@ public class RedPortalGun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (fireRate == 0 ){
-            if( Input.GetButtonDown ("Fire1")){
-                ShootRed();
-            }
-        }
-        else {
-            if( Input.GetButton("Fire1") && Time.time > timeToFire){
-                timeToFire = Time.time + 1/fireRate;
-                ShootRed();
-            }
-        }
-
-        if (fireRate == 0)
-        {
-            if (Input.GetButtonDown("Fire2"))
-            {
-                ShootBlue();
-            }
-        }
-        else
-        {
-            if (Input.GetButton("Fire2") && Time.time > timeToFire)
-            {
-                timeToFire = Time.time + 1 / fireRate;
-                ShootBlue();
-            }
-        }
-        */
-
-        // well, this fixes out double portal shooting problem at least
         if (onCooldown)
         {
             timeOnCooldown += 1 * Time.deltaTime;
@@ -89,11 +58,6 @@ public class RedPortalGun : MonoBehaviour
                 ShootBlue();
             }
         }
-        // Debug.DrawLine(this.transform.position, this.transform.position + this.transform.right * 200, Color.green, 2);
-        //Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //Vector2 direction = (Vector2)((worldMousePos - firepoint.position));
-        //direction.Normalize();
-        //Debug.DrawRay(this.transform.position, direction * 200, Color.green, 10);
     }
 
     void ShootRed() {
@@ -109,6 +73,7 @@ public class RedPortalGun : MonoBehaviour
             else
             {
                 Debug.Log("New Fire Mode! Red");
+                portalShootSound.Play();
                 SpawnRedUsingRaycast();
             }
         }
@@ -156,6 +121,8 @@ public class RedPortalGun : MonoBehaviour
         }
     }
 
+    // ALL CODE AFTER THIS POINT IS NOT USED, but it may prove useful to keep for debug purposes
+    // ##########################################################################################
     void SpawnRedAtCursorLocation()
     {
         Vector3 spawnLocation = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -208,7 +175,6 @@ public class RedPortalGun : MonoBehaviour
             else
             {
                 // This functionality is being moved to it's own file because i need to attach a script to the blue arm so the raycast starts from the correct spot.
-                // ideally I'll come back later and clean up this 269 line mess of code, but for now, i dont want to break things
                 Debug.Log("New Fire Mode! Blue");
             }
         }

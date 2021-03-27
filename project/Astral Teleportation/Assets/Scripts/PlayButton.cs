@@ -14,6 +14,8 @@ public class PlayButton : MonoBehaviour
     // I am expanding this class to also handle the buttons in level select. PlayButtonPressed() may be changed in the future once save data is implemented
     public void PlayButtonPressed()
     {
+        // straighforward fix for it not doing anything. we can come back later and choose a different solution
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //If statement is to ensure DelayedLoad() runs only once
         if (!loadingInitiated)
         {
@@ -29,6 +31,12 @@ public class PlayButton : MonoBehaviour
     public void playLevelFromLevelSelectScreen()
     {
         SceneManager.LoadScene(int.Parse(gameObject.tag));
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit Button Pressed");
+        Application.Quit();
     }
 
 
