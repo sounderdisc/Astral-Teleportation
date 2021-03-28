@@ -39,6 +39,11 @@ public class PlayButton : MonoBehaviour
         Application.Quit();
     }
 
+    public void BootlegVictoryMainMenuButton()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
     IEnumerator DelayedLoad()
     {

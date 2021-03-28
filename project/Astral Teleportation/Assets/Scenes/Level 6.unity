@@ -598,6 +598,11 @@ PrefabInstance:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 1592890149}
+    - target: {fileID: 999925307601010287, guid: d5a5eedd22a8b5c4382078938f5053ab,
+        type: 3}
+      propertyPath: currentRedPortal
+      value: 
+      objectReference: {fileID: 1146574418}
     - target: {fileID: 2688628108208432786, guid: d5a5eedd22a8b5c4382078938f5053ab,
         type: 3}
       propertyPath: hearts.Array.data[0]
@@ -15932,6 +15937,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c28523fa41221e0cac4166fd9314c67, type: 3}
+--- !u!1 &1146574418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7352395287641387271, guid: 8231271164cd16d4eb8a12457be8e870,
+    type: 3}
+  m_PrefabInstance: {fileID: 1232864238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1232864238
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16494,6 +16505,11 @@ PrefabInstance:
       propertyPath: hearts.Array.data[2]
       value: 
       objectReference: {fileID: 1592890148}
+    - target: {fileID: 7943318037430249895, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
+        type: 3}
+      propertyPath: currentRedPortal
+      value: 
+      objectReference: {fileID: 1146574418}
     - target: {fileID: 8176740360583684394, guid: 57a1e48196fd9a71d9ed92cb45cb6717,
         type: 3}
       propertyPath: m_Size.y

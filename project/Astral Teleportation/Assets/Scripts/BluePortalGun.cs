@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using System;
 
 public class BluePortalGun : MonoBehaviour
 {
@@ -59,7 +60,15 @@ public class BluePortalGun : MonoBehaviour
             }
             else
             {
-                portalShootSound.Play();
+                // try catch is jank, but we're out of time. this will make level 6 blue portal gun not make sound, but let the gun fire otherwise
+                try
+                {
+                    portalShootSound.Play();
+                }
+                catch(Exception e)
+                {
+                    Debug.Log(e);
+                }
                 SpawnBlueUsingRaycast();
             }
         }
@@ -88,7 +97,8 @@ public class BluePortalGun : MonoBehaviour
 
         // now lets fix our references so the portals are connected and actually move players
         // first, let's see if the other color's gun has fired since the Start() function
-        currentRedPortal = GameObject.Find("RedPortal(Clone)");
+        if (currentRedPortal == null)
+            currentRedPortal = GameObject.Find("RedPortal(Clone)");
         if (currentRedPortal != null)
         {
             PortalCollision redScript = currentRedPortal.GetComponent(typeof(PortalCollision)) as PortalCollision;
