@@ -131,3 +131,12 @@
 | Step 4 | Check that the prefab has been placed successfully and has the proper components | Each decoration prefab should have a rigidbody 2D component and a box collider 2D component fit to the sprite |
 | Step 5 | Continue checking each decoration prefab in the same way as steps 1 - 4 | This should confirm that all prefabs are working correctly and have the correct components |
 
+## Hint Button Test:
+
+| No | Steps to Reproduce | Expected Behavior |
+|--- |--------------------|-------------------|
+| Step 1 | Load the scene at "Assets/Scenes/testingScenes/LinkedScene.unity" into unity by double clicking the "LinkedScene" file in Assests->Scenes->testingScenes. | This will open up unity, and you should see the editor. |
+| Step 2 | Select play on the top middle of Unity. This will allow the game to be playable. | The Unity editor should get darker at this time, notifying you that the game is now playing. |
+| Step 3 | Change to game view by clicking the Game tab. | This should display the game in game view. |
+| Step 4 | Press the Hint button that is at the top right. | When pressing the Hint button, the game should show a hint in the top center region of the game screen. After 5 seconds the hint should disappear. |
+
