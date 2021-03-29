@@ -164,7 +164,7 @@ Team Member | Shivani Kumar
 - [Source Code](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets)
 - [Automated Tests](https://github.com/sounderdisc/POOPproject/tree/main/project/Astral%20Teleportation/Assets/Tests)
 - [Manual Tests](https://github.com/sounderdisc/POOPproject/blob/main/project/Astral%20Teleportation/Assets/Tests/MANUALTESTS.md)
-- [Demonstration](https://www.youtube.com/watch?v=AOqe2Qh9glk)
+- [Demonstration](https://www.youtube.com/watch?v=DgBarvqyTmk)
 ## Responsibilities
 - Devon Wilkerson (wilkersonrdevon) - Implement hints
 - Matthew Hubbs (sounderdisc) - polish portal gun behavior, last minute fixes
